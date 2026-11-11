@@ -1,0 +1,2293 @@
+{
+  "title": "Library of the Commons: Ostrom lineage, first pass",
+  "version": "0.1.0",
+  "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf",
+  "notes": [
+    "Generation 1 only. Appendix A lists dissertations supervised by Workshop faculty, not only by Elinor Ostrom personally.",
+    "Snapshot as of the source document (c. 2009-10). Later PhDs and later generations are not yet included.",
+    "Tiers are labels for a first pass, not probabilities."
+  ],
+  "counts": {
+    "tiers": {
+      "T0": 2,
+      "T2": 48,
+      "T1": 54,
+      "T3": 47
+    },
+    "workshop_phd_themes": {
+      "Public services and policing": 15,
+      "Collective action and experiments": 10,
+      "Constitutional and political theory": 8,
+      "Forests": 16,
+      "Water and irrigation": 7,
+      "Other institutional analysis": 26,
+      "Environmental policy": 9,
+      "Land and property rights": 8,
+      "Fisheries and oceans": 3
+    }
+  },
+  "nodes": [
+    {
+      "id": "elinor-ostrom",
+      "name": "Elinor Ostrom",
+      "tier": "T0",
+      "role": "root",
+      "year": 1965,
+      "detail": "Political scientist; 2009 Nobel in economics; co-founded the Workshop with Vincent Ostrom (1973)",
+      "theme": "Root",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "vincent-ostrom",
+      "name": "Vincent Ostrom",
+      "tier": "T0",
+      "role": "co-founder",
+      "year": null,
+      "detail": "Founding director of the Workshop; Elinor Ostrom's mentor and spouse",
+      "theme": "Root",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "songmin-ahn",
+      "name": "Songmin Ahn",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1995,
+      "detail": "governance structure and size of public libraries",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "t-k-ahn",
+      "name": "T. K. Ahn",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2001,
+      "detail": "foundations for cooperation in social dilemmas",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "barbara-allen",
+      "name": "Barbara Allen",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1981,
+      "detail": "Tocqueville's political theory and feminist theory",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "david-n-allen",
+      "name": "David N. Allen",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1980,
+      "detail": "street-level police supervision",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "linda-allen",
+      "name": "Linda Allen",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "structural choice for the Commission for Environmental Cooperation",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "krister-p-andersson",
+      "name": "Krister P. Andersson",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2002,
+      "detail": "decentralization and municipal forest governance in Bolivia",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "eduardo-k-araral",
+      "name": "Eduardo K. Araral",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2006,
+      "detail": "irrigation reform in the Philippines",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "john-a-baden",
+      "name": "John A. Baden",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1969,
+      "detail": "social stability among the Hutterites",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "robert-v-bartlett",
+      "name": "Robert V. Bartlett",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1984,
+      "detail": "rationality and science in the National Environmental Policy Act",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "peter-a-beck",
+      "name": "Peter A. Beck",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2000,
+      "detail": "participatory conservation in Uganda",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "michael-berheide",
+      "name": "Michael Berheide",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1984,
+      "detail": "Karl Popper and political science methodology",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "robert-l-bish",
+      "name": "Robert L. Bish",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1968,
+      "detail": "housing tax and subsidy distribution",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "william-blomquist",
+      "name": "William Blomquist",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1987,
+      "detail": "changing an endangered commons into a managed commons (groundwater)",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "patrick-brandt",
+      "name": "Patrick Brandt",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2001,
+      "detail": "agenda setting in executive-congressional relations",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "brenda-k-bushouse",
+      "name": "Brenda K. Bushouse",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1999,
+      "detail": "mixed economy of child care",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jaesong-choe",
+      "name": "Jaesong Choe",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1992,
+      "detail": "urban common-property institutions in Seoul",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "brian-k-collins",
+      "name": "Brian K. Collins",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2000,
+      "detail": "contestable markets for state economic governance",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "eric-coleman",
+      "name": "Eric Coleman",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2009,
+      "detail": "institutions, trust and collective action",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "james-l-cooper-jr",
+      "name": "James L. Cooper Jr.",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1993,
+      "detail": "the Solicitor General and federal litigation",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "sue-e-s-crawford",
+      "name": "Sue E. S. Crawford",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1995,
+      "detail": "clergy in the secular city",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "cynthia-croissant",
+      "name": "Cynthia Croissant",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "land use and land cover in Monroe County, Indiana",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "debra-l-dean",
+      "name": "Debra L. Dean",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1982,
+      "detail": "models of police service production",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "fabio-de-castro",
+      "name": "Fabio De Castro",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2000,
+      "detail": "fishing accords and political ecology in the Amazon",
+      "theme": "Fisheries and oceans",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "nives-dolsak",
+      "name": "Nives Dolsak",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2000,
+      "detail": "marketable permits for the commons",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "julia-aker-duany",
+      "name": "Julia Aker Duany",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1996,
+      "detail": "Sudanese women and education",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "wal-duany",
+      "name": "Wal Duany",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1992,
+      "detail": "constitution of order among the Nuer",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "dean-dudley",
+      "name": "Dean Dudley",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1993,
+      "detail": "individual behavior in social dilemmas",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "george-ehrhardt",
+      "name": "George Ehrhardt",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2002,
+      "detail": "security consultation in Northeast Asia",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "ginger-elliott-teague",
+      "name": "Ginger Elliott-Teague",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2007,
+      "detail": "NGOs in policymaking in Tanzania",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "virginia-d-fielder",
+      "name": "Virginia D. Fielder",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1976,
+      "detail": "law enforcement news coverage",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "michael-fotos-iii",
+      "name": "Michael Fotos III",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1999,
+      "detail": "organized interests and environmental policy implementation",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "celia-futemma",
+      "name": "Celia Futemma",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2000,
+      "detail": "property rights to natural resources in the Lower Amazon",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "david-goetze",
+      "name": "David Goetze",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1980,
+      "detail": "state air pollution control agencies",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "barbara-p-greene",
+      "name": "Barbara P. Greene",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1971,
+      "detail": "responsiveness and control in regulation",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "vernon-l-greene",
+      "name": "Vernon L. Greene",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1978,
+      "detail": "metaphysical foundations of constitutional order",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "phillip-m-gregg",
+      "name": "Phillip M. Gregg",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1972,
+      "detail": "reformulating theory in policy studies",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "nathan-griffith",
+      "name": "Nathan Griffith",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2004,
+      "detail": "constitutional economics of regional integration",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "patrick-j-haney",
+      "name": "Patrick J. Haney",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1992,
+      "detail": "organizing for foreign policy and crisis decision-making",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tanya-hayes",
+      "name": "Tanya Hayes",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2007,
+      "detail": "forest governance in the Mosquitia corridor, Honduras and Nicaragua",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "andrew-r-herr",
+      "name": "Andrew R. Herr",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1996,
+      "detail": "appropriation externalities in the commons",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "chi-kan-richard-hung",
+      "name": "Chi-Kan Richard Hung",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1999,
+      "detail": "credit risk and rules in microcredit",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "su-ik-hwang",
+      "name": "Su-Ik Hwang",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1985,
+      "detail": "constitutional choice and the individual calculus of voting",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "pamela-jagger",
+      "name": "Pamela Jagger",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2009,
+      "detail": "forest sector devolution and rural livelihoods in western Uganda",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "avra-johnson",
+      "name": "Avra Johnson",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2001,
+      "detail": "community development corporations in Indianapolis",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "derek-kauneckis",
+      "name": "Derek Kauneckis",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "co-production of property rights in southern Mexico",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "david-a-kessler",
+      "name": "David A. Kessler",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1989,
+      "detail": "neighborhood-oriented policing and officers' attitudes",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tomas-m-koontz",
+      "name": "Tomas M. Koontz",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1997,
+      "detail": "federalism and natural resource policy",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "wai-fung-lam",
+      "name": "Wai Fung Lam",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1994,
+      "detail": "irrigation systems in Nepal",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "myungsuk-lee",
+      "name": "Myungsuk Lee",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1994,
+      "detail": "institutional analysis and collective action in common-pool resources",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "brian-loveman",
+      "name": "Brian Loveman",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1973,
+      "detail": "agrarian reform in Chile",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "anthony-p-matejczyk",
+      "name": "Anthony P. Matejczyk",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1997,
+      "detail": "institutionally induced consensus and zoning exceptions",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "james-c-mcdavid",
+      "name": "James C. McDavid",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1975,
+      "detail": "interjurisdictional cooperation and police performance in St. Louis",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "john-p-mciver",
+      "name": "John P. McIver",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1986,
+      "detail": "control of bureaucrats and urban policing",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "esther-mwangi",
+      "name": "Esther Mwangi",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2003,
+      "detail": "property rights transformation in Kenya's Maasailand",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "marissa-myers",
+      "name": "Marissa Myers",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1997,
+      "detail": "(topic not captured)",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tun-myint",
+      "name": "Tun Myint",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "multilayer environmental governance in the Mekong and Rhine river basins",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "evelyn-lwanga-namubiru",
+      "name": "Evelyn Lwanga Namubiru",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2008,
+      "detail": "coping with top-down institutional change in forestry",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "brent-never",
+      "name": "Brent Never",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "institution making in times of crisis (Benin)",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "matthew-potoski",
+      "name": "Matthew Potoski",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1998,
+      "detail": "air pollution regulation in the American states",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "aseem-prakash",
+      "name": "Aseem Prakash",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1997,
+      "detail": "corporate environmentalism beyond compliance",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "susan-raines",
+      "name": "Susan Raines",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2002,
+      "detail": "stakeholder absence in international environmental agreements (ISO 14001)",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "dixie-wiles-ray",
+      "name": "Dixie Wiles Ray",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1992,
+      "detail": "neighborhood health centers and collective action",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "ashok-regmi",
+      "name": "Ashok Regmi",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2007,
+      "detail": "group heterogeneity and collective action in irrigation and forests, Nepal",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "derek-reiners",
+      "name": "Derek Reiners",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2006,
+      "detail": "public land agencies and wildfire in the Interior West",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "michael-e-roberts",
+      "name": "Michael E. Roberts",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2008,
+      "detail": "human collective behavior",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "daniel-m-sabet",
+      "name": "Daniel M. Sabet",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "nonprofits and water and sanitation on Mexico's northern border",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "filippo-sabetti",
+      "name": "Filippo Sabetti",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1977,
+      "detail": "the political basis of human misery in a Sicilian village",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jeanne-schaaf",
+      "name": "Jeanne Schaaf",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1989,
+      "detail": "competitive entry into telecommunications markets",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "edella-schlager",
+      "name": "Edella Schlager",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1990,
+      "detail": "governance of coastal fisheries",
+      "theme": "Fisheries and oceans",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "michael-schoon",
+      "name": "Michael Schoon",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2008,
+      "detail": "robustness and governance in southern African peace parks",
+      "theme": "Environmental policy",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "charles-m-schweik",
+      "name": "Charles M. Schweik",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1998,
+      "detail": "spatial and temporal analysis of forest resources and institutions",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "brian-shoup",
+      "name": "Brian Shoup",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2007,
+      "detail": "institutional incentives and interethnic conflict",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "maria-clara-silva-forsberg",
+      "name": "Maria Clara Silva-Forsberg",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1999,
+      "detail": "protecting an urban forest reserve in the Amazon",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "john-sislin",
+      "name": "John Sislin",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1993,
+      "detail": "military assistance and political compliance",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "dennis-c-smith",
+      "name": "Dennis C. Smith",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1976,
+      "detail": "police professionalization and performance",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "ronald-s-smith",
+      "name": "Ronald S. Smith",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2006,
+      "detail": "social capital and neighborhood associations",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jane-southworth",
+      "name": "Jane Southworth",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2000,
+      "detail": "climate change and land cover change impacts on ecosystems",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "mark-sproule-jones",
+      "name": "Mark Sproule-Jones",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1970,
+      "detail": "a theory of public employment",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "michael-leslie-squires",
+      "name": "Michael Leslie Squires",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1982,
+      "detail": "modeling the US-USSR strategic arms race",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "wenjie-sun",
+      "name": "Wenjie Sun",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2006,
+      "detail": "land-use and land-cover change in south-central Indiana",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "david-w-swindell",
+      "name": "David W. Swindell",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1997,
+      "detail": "community organizations in Indianapolis neighborhoods",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "shui-yan-tang",
+      "name": "Shui Yan Tang",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1989,
+      "detail": "institutions and collective action in irrigation systems",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "james-t-thomson",
+      "name": "James T. Thomson",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1976,
+      "detail": "law and rural institutions in Hausa-speaking Niger",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "maria-angelica-toniolo",
+      "name": "Maria Angelica Toniolo",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2004,
+      "detail": "land tenure and accidental fires in the Amazon",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jennifer-turner",
+      "name": "Jennifer Turner",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1997,
+      "detail": "local government entrepreneurship in the Chinese water sector",
+      "theme": "Water and irrigation",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "paul-w-turner",
+      "name": "Paul W. Turner",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1998,
+      "detail": "constitutional orders and deforestation in the humid tropics",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "frank-van-laerhoven",
+      "name": "Frank van Laerhoven",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2008,
+      "detail": "local governance and collective action dilemmas",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "douglas-e-van-houweling",
+      "name": "Douglas E. Van Houweling",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1976,
+      "detail": "a microeconomic theory of political participation",
+      "theme": "Constitutional and political theory",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "george-varughese",
+      "name": "George Varughese",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1999,
+      "detail": "villagers, bureaucrats and forests in Nepal",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "nathan-vogt",
+      "name": "Nathan Vogt",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "institutions and land-cover change in Uganda",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "s-tjip-walker",
+      "name": "S. Tjip Walker",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1998,
+      "detail": "the political economy of privatization in Africa",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jianxun-wang",
+      "name": "Jianxun Wang",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 2006,
+      "detail": "village governance in contemporary China",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "david-welch",
+      "name": "David Welch",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2007,
+      "detail": "forest dynamics in south-central Indiana and southern Illinois",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "gordon-p-whitaker",
+      "name": "Gordon P. Whitaker",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1971,
+      "detail": "urban police forces and neighborhood services",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "richard-k-wilson",
+      "name": "Richard K. Wilson",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1982,
+      "detail": "institutional effects on committee behavior (experiment)",
+      "theme": "Collective action and experiments",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "lois-r-wise",
+      "name": "Lois R. Wise",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1982,
+      "detail": "public employee membership incentives",
+      "theme": "Public services and policing",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "james-s-wunsch",
+      "name": "James S. Wunsch",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1974,
+      "detail": "voluntary associations in Ghanaian secondary cities",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "susan-g-wynne",
+      "name": "Susan G. Wynne",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1989,
+      "detail": "the land boards of Botswana",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tracy-yandle",
+      "name": "Tracy Yandle",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2001,
+      "detail": "individual tradable quotas in New Zealand fisheries",
+      "theme": "Fisheries and oceans",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tai-shuenn-yang",
+      "name": "Tai-Shuenn Yang",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 1987,
+      "detail": "property rights and constitutional order in imperial China",
+      "theme": "Land and property rights",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "abigail-york",
+      "name": "Abigail York",
+      "tier": "T1",
+      "role": "workshop-phd",
+      "year": 2005,
+      "detail": "land use institutions in an urbanizing landscape",
+      "theme": "Forests",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "donald-g-zauderer",
+      "name": "Donald G. Zauderer",
+      "tier": "T2",
+      "role": "workshop-phd",
+      "year": 1971,
+      "detail": "political consequences of the Ohio ballot form",
+      "theme": "Other institutional analysis",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "arun-agrawal",
+      "name": "Arun Agrawal",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "University of Michigan",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "paul-aligica",
+      "name": "Paul Aligica",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Mercatus Center, George Mason University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "j-marty-anderies",
+      "name": "J. Marty Anderies",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Arizona State University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "xavier-basurto",
+      "name": "Xavier Basurto",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Duke University Marine Laboratory",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "kenneth-bickers",
+      "name": "Kenneth Bickers",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "University of Colorado Boulder",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "juan-camilo-cardenas",
+      "name": "Juan-Camilo Cardenas",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Universidad de Los Andes, Bogota",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "salvador-espinosa",
+      "name": "Salvador Espinosa",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "San Diego State University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "clark-gibson",
+      "name": "Clark Gibson",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "University of California, San Diego",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "charlotte-hess",
+      "name": "Charlotte Hess",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Syracuse University (former Workshop librarian; Digital Library of the Commons)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "marco-janssen",
+      "name": "Marco Janssen",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Arizona State University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "in-kim",
+      "name": "In Kim",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Pusan National University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "kwanbo-kim",
+      "name": "Kwanbo Kim",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "The Catholic University of Korea",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "maria-claudia-lopez",
+      "name": "Maria Claudia Lopez",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Pontificia Universidad Javeriana, Bogota",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "thomas-lyon",
+      "name": "Thomas Lyon",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "University of Michigan",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jennifer-mckay",
+      "name": "Jennifer McKay",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "University of South Australia",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "amy-poteete",
+      "name": "Amy Poteete",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Concordia University, Montreal",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "larry-schroeder",
+      "name": "Larry Schroeder",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Syracuse University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "emil-uddhammar",
+      "name": "Emil Uddhammar",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Vaxjo University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jon-unruh",
+      "name": "Jon Unruh",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "McGill University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tommaso-vitale",
+      "name": "Tommaso Vitale",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Universita di Milano Bicocca",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "matthew-auer",
+      "name": "Matthew Auer",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "stephen-benard",
+      "name": "Stephen Benard",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "william-bianco",
+      "name": "William Bianco",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "lisa-blomgren-bingham",
+      "name": "Lisa Blomgren Bingham",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "eileen-braman",
+      "name": "Eileen Braman",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jerome-busemeyer",
+      "name": "Jerome Busemeyer",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "daniel-cole",
+      "name": "Daniel Cole",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University School of Law",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "aurelian-craiutu",
+      "name": "Aurelian Craiutu",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "tom-evans",
+      "name": "Tom Evans",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University (CIPEC)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "burnell-fischer",
+      "name": "Burnell Fischer",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "roy-gardner",
+      "name": "Roy Gardner",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University (Economics)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "kerry-krutilla",
+      "name": "Kerry Krutilla",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "lauren-morris-maclean",
+      "name": "Lauren Morris MacLean",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "john-maxwell",
+      "name": "John Maxwell",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "michael-mcginnis",
+      "name": "Michael McGinnis",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University (Workshop co-director)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "lloyd-orr",
+      "name": "Lloyd Orr",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "roger-parks",
+      "name": "Roger Parks",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "eric-rasmusen",
+      "name": "Eric Rasmusen",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "armando-razo",
+      "name": "Armando Razo",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "kenneth-richards",
+      "name": "Kenneth Richards",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "amos-sawyer",
+      "name": "Amos Sawyer",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University (Workshop)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "beate-sissenich",
+      "name": "Beate Sissenich",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "regina-smyth",
+      "name": "Regina Smyth",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "jeffrey-stake",
+      "name": "Jeffrey Stake",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University School of Law",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "verlon-stone",
+      "name": "Verlon Stone",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "catherine-tucker",
+      "name": "Catherine Tucker",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University (Anthropology)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    },
+    {
+      "id": "james-walker",
+      "name": "James Walker",
+      "tier": "T3",
+      "role": "affiliated-faculty",
+      "year": null,
+      "detail": "Indiana University (Workshop co-director)",
+      "theme": "Affiliated faculty",
+      "source": "https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf"
+    }
+  ],
+  "edges": [
+    {
+      "source": "vincent-ostrom",
+      "target": "elinor-ostrom",
+      "type": "co-founder"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "songmin-ahn",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "t-k-ahn",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "barbara-allen",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "david-n-allen",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "linda-allen",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "krister-p-andersson",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "eduardo-k-araral",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "john-a-baden",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "robert-v-bartlett",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "peter-a-beck",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "michael-berheide",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "robert-l-bish",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "william-blomquist",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "patrick-brandt",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "brenda-k-bushouse",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jaesong-choe",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "brian-k-collins",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "eric-coleman",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "james-l-cooper-jr",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "sue-e-s-crawford",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "cynthia-croissant",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "debra-l-dean",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "fabio-de-castro",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "nives-dolsak",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "julia-aker-duany",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "wal-duany",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "dean-dudley",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "george-ehrhardt",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "ginger-elliott-teague",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "virginia-d-fielder",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "michael-fotos-iii",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "celia-futemma",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "david-goetze",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "barbara-p-greene",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "vernon-l-greene",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "phillip-m-gregg",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "nathan-griffith",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "patrick-j-haney",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tanya-hayes",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "andrew-r-herr",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "chi-kan-richard-hung",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "su-ik-hwang",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "pamela-jagger",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "avra-johnson",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "derek-kauneckis",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "david-a-kessler",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tomas-m-koontz",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "wai-fung-lam",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "myungsuk-lee",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "brian-loveman",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "anthony-p-matejczyk",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "james-c-mcdavid",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "john-p-mciver",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "esther-mwangi",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "marissa-myers",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tun-myint",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "evelyn-lwanga-namubiru",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "brent-never",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "matthew-potoski",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "aseem-prakash",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "susan-raines",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "dixie-wiles-ray",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "ashok-regmi",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "derek-reiners",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "michael-e-roberts",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "daniel-m-sabet",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "filippo-sabetti",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jeanne-schaaf",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "edella-schlager",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "michael-schoon",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "charles-m-schweik",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "brian-shoup",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "maria-clara-silva-forsberg",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "john-sislin",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "dennis-c-smith",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "ronald-s-smith",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jane-southworth",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "mark-sproule-jones",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "michael-leslie-squires",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "wenjie-sun",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "david-w-swindell",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "shui-yan-tang",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "james-t-thomson",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "maria-angelica-toniolo",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jennifer-turner",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "paul-w-turner",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "frank-van-laerhoven",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "douglas-e-van-houweling",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "george-varughese",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "nathan-vogt",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "s-tjip-walker",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jianxun-wang",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "david-welch",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "gordon-p-whitaker",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "richard-k-wilson",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "lois-r-wise",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "james-s-wunsch",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "susan-g-wynne",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tracy-yandle",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tai-shuenn-yang",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "abigail-york",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "donald-g-zauderer",
+      "type": "workshop-phd"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "arun-agrawal",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "paul-aligica",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "j-marty-anderies",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "xavier-basurto",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "kenneth-bickers",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "juan-camilo-cardenas",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "salvador-espinosa",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "clark-gibson",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "charlotte-hess",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "marco-janssen",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "in-kim",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "kwanbo-kim",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "maria-claudia-lopez",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "thomas-lyon",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jennifer-mckay",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "amy-poteete",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "larry-schroeder",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "emil-uddhammar",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jon-unruh",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tommaso-vitale",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "matthew-auer",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "stephen-benard",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "william-bianco",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "lisa-blomgren-bingham",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "eileen-braman",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jerome-busemeyer",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "daniel-cole",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "aurelian-craiutu",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "tom-evans",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "burnell-fischer",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "roy-gardner",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "kerry-krutilla",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "lauren-morris-maclean",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "john-maxwell",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "michael-mcginnis",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "lloyd-orr",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "roger-parks",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "eric-rasmusen",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "armando-razo",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "kenneth-richards",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "amos-sawyer",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "beate-sissenich",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "regina-smyth",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "jeffrey-stake",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "verlon-stone",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "catherine-tucker",
+      "type": "affiliated"
+    },
+    {
+      "source": "elinor-ostrom",
+      "target": "james-walker",
+      "type": "affiliated"
+    }
+  ]
+}

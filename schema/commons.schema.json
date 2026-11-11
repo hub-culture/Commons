@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hub-culture/Commons/schema/commons.schema.json",
+  "title": "Commons registry entry",
+  "description": "One commons, placed on the rules ladder, in the shape a Gaia map layer and a Cloud Mirror charter can use.",
+  "type": "object",
+  "required": ["id", "name", "kind", "ladder_step", "boundaries", "users", "status"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "kind": { "enum": ["ocean", "land", "freshwater", "atmosphere", "biodiversity", "genetic-resources", "energy", "space", "digital", "agents", "knowledge", "other"] },
+    "ladder_step": {
+      "type": "integer", "minimum": 1, "maximum": 3,
+      "description": "1 = no rules, 2 = weak rules, 3 = rules that don't pay out. Use 4 only when a commons is protected and remunerating; omitted for now."
+    },
+    "summary": { "type": "string" },
+    "boundaries": {
+      "type": "object",
+      "description": "Where the commons starts and stops.",
+      "properties": {
+        "type": { "enum": ["polygon", "network", "global", "orbital", "undefined"] },
+        "geojson": { "type": ["object", "null"], "description": "GeoJSON geometry when the boundary is a place." },
+        "h3_cells": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      },
+      "required": ["type"]
+    },
+    "terms": { "type": "array", "items": { "type": "string" }, "description": "Key definitions and what they include or exclude." },
+    "users": {
+      "type": "object",
+      "properties": {
+        "inliers": { "type": "array", "items": { "type": "string" } },
+        "outliers": { "type": "array", "items": { "type": "string" } },
+        "opponents": { "type": "array", "items": { "type": "string" }, "description": "Those who don't want a commons here. They define the boundary from the other side." },
+        "seasonal": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status"],
+        "properties": {
+          "name": { "type": "string" },
+          "instrument": { "type": "string" },
+          "status": { "enum": ["none", "voluntary", "binding", "binding-unenforced", "proposed"] },
+          "source": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "rights_and_responsibilities": { "type": "array", "items": { "type": "object", "properties": { "right": { "type": "string" }, "responsibility": { "type": "string" } } } },
+    "remuneration": {
+      "type": "object",
+      "properties": {
+        "mechanism": { "type": "string" },
+        "rate": { "type": "string" },
+        "beneficiaries": { "type": "string" },
+        "local_value": { "type": "string", "description": "What the keepers actually value, and how payouts convert into it." }
+      }
+    },
+    "stories": { "type": "array", "items": { "type": "string" } },
+    "cloud_mirror_spoke": { "type": ["string", "null"] },
+    "status": { "enum": ["candidate", "pilot", "active", "archived"] },
+    "sources": { "type": "array", "items": { "type": "string", "format": "uri" } }
+  }
+}

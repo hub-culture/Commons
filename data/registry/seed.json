@@ -1,0 +1,100 @@
+[
+  {
+    "id": "medicine-from-biodiversity",
+    "name": "Medicine from biodiversity",
+    "kind": "genetic-resources",
+    "ladder_step": 2,
+    "summary": "Much of modern medicine traces to plants, animals and microbes. A global benefit-sharing rule for genetic sequence data exists, but contributions are voluntary and almost none have been made.",
+    "boundaries": { "type": "global", "notes": "Genetic resources and their digital sequence information (DSI), wherever they are held." },
+    "terms": ["Digital sequence information (DSI): digital representations of DNA, RNA and protein sequences."],
+    "users": {
+      "inliers": ["Indigenous peoples and local communities who keep the source biodiversity", "Public research databases"],
+      "outliers": ["Commercial users of DSI who do not contribute"],
+      "opponents": [],
+      "seasonal": []
+    },
+    "rules": [
+      { "name": "Cali Fund", "instrument": "CBD COP16 decision on DSI benefit-sharing", "status": "voluntary", "source": "https://mptf.undp.org/news/press-release-cali-fund-launches-margins-resumed-session-cop16" }
+    ],
+    "remuneration": {
+      "mechanism": "Contribution to the Cali Fund by commercial DSI users",
+      "rate": "0.1% of revenue or 1% of profits (indicative)",
+      "beneficiaries": "50% to the self-identified needs of Indigenous peoples and local communities",
+      "local_value": "To be defined with source communities."
+    },
+    "stories": ["GLP-1 drugs trace to exendin-4 in Gila monster venom.", "A gut bacterium of the Japanese tree frog eliminated colorectal tumours in mice (2025 study); not yet tested in people."],
+    "cloud_mirror_spoke": null,
+    "status": "candidate",
+    "sources": [
+      "https://www.imd.org/ibyimd/brain-circuits/6-things-you-need-to-know-about-the-cali-fund/",
+      "https://www.lse.ac.uk/granthaminstitute/wp-content/uploads/2026/06/GRI-working-paper-450-Makowska-Curran.pdf"
+    ]
+  },
+  {
+    "id": "marine-protected-area-pilot",
+    "name": "Marine protected area pilot (with the Ocean Climate Fund)",
+    "kind": "ocean",
+    "ladder_step": 2,
+    "summary": "MPAs range from strict no-take reserves to paper parks. Outcomes depend on how the MPA is structured, not on how much the area is used, as Sharm el-Sheikh and Cancún show.",
+    "boundaries": { "type": "polygon", "geojson": null, "notes": "Pilot site to be chosen (Azores or Bermuda). Boundary from the Ocean Climate Fund's Gaia layers." },
+    "terms": ["Marine protected area: specify the IUCN category and what is permitted inside."],
+    "users": { "inliers": ["Local fishers", "Dive and tourism operators", "Residents"], "outliers": [], "opponents": [], "seasonal": ["Visitors"] },
+    "rules": [],
+    "remuneration": { "mechanism": "Ocean Climate Fund virtual ocean layer on Gaia: supporters buy a virtual square metre, proceeds fund protection", "local_value": "To be defined with the community." },
+    "stories": [],
+    "cloud_mirror_spoke": null,
+    "status": "candidate",
+    "sources": ["https://github.com/hub-culture/Ocean"]
+  },
+  {
+    "id": "renewable-citizen-share",
+    "name": "Renewable energy citizen share",
+    "kind": "energy",
+    "ladder_step": 3,
+    "summary": "Operating solar and wind assets earn high margins because the fuel is free and staffing is light. A codified share of revenue could fund a citizen right to energy instead of discretionary community benefits.",
+    "boundaries": { "type": "polygon", "geojson": null, "notes": "Pilot portfolio to be chosen (Iberia discussed)." },
+    "terms": [],
+    "users": { "inliers": ["Neighbouring communities", "Asset owners"], "outliers": [], "opponents": [], "seasonal": [] },
+    "rules": [{ "name": "Community benefit agreements", "status": "voluntary" }],
+    "remuneration": { "mechanism": "Codified revenue share to citizens", "local_value": "Energy access, payments, or community services." },
+    "stories": [],
+    "cloud_mirror_spoke": null,
+    "status": "candidate",
+    "sources": []
+  },
+  {
+    "id": "planetary-protection",
+    "name": "Planetary protection",
+    "kind": "space",
+    "ladder_step": 3,
+    "summary": "Space is not rule-free. States must avoid harmful contamination of other worlds and of Earth, a working global-commons rule since 1967.",
+    "boundaries": { "type": "orbital", "notes": "Celestial bodies and the return of samples to Earth." },
+    "terms": [],
+    "users": { "inliers": ["Space agencies"], "outliers": [], "opponents": [], "seasonal": [] },
+    "rules": [
+      { "name": "Outer Space Treaty, Article IX", "instrument": "1967 treaty; COSPAR planetary protection policy", "status": "binding" }
+    ],
+    "remuneration": {},
+    "stories": ["Apollo 11's crew spent about three weeks in quarantine in case they brought back lunar organisms."],
+    "cloud_mirror_spoke": null,
+    "status": "candidate",
+    "sources": []
+  },
+  {
+    "id": "ai-agent-commons",
+    "name": "AI agent commons",
+    "kind": "agents",
+    "ladder_step": 1,
+    "summary": "AI agents increasingly meet and act in shared networks with almost no rules on use. A billion or more agents are expected within a year.",
+    "boundaries": { "type": "network", "notes": "Shared networks where agents interact and act." },
+    "terms": ["Agent: an AI system acting with some autonomy on someone's behalf, with a Mandala identity and an accountable human operator."],
+    "users": { "inliers": ["Agents that accept a charter and its precepts", "Their operators"], "outliers": ["Agents without accountable operators"], "opponents": ["Actors who deploy agents covertly and disclose no incidents"], "seasonal": [] },
+    "rules": [{ "name": "Cloud Mirror agent charter", "status": "proposed" }],
+    "rights_and_responsibilities": [{ "right": "Standing and access in the network", "responsibility": "Follow the precepts; disclose incidents" }],
+    "remuneration": { "mechanism": "Share of agent value or compute to the commons treasury" },
+    "stories": [],
+    "cloud_mirror_spoke": "global-commons",
+    "status": "candidate",
+    "sources": []
+  }
+]

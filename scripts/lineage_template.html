@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library of the Commons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: radial lineage map (left) + searchable register of names (right). Rings = tiers, sectors = research themes. */
+  --bg: #f3f5f4;
+  --panel: #ffffff;
+  --ink: #15232b;
+  --muted: #5b6b72;
+  --rule: #d6dedd;
+  --t1: #0f7d74;
+  --t2: #b0731e;
+  --t3: #6a5acd;
+  --root: #15232b;
+  --display: "Newsreader", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1a1f; --panel: #16242b; --ink: #e6eeee; --muted: #9db0b4; --rule: #2a3b42;
+    --t1: #3fc1b4; --t2: #e3a54f; --t3: #a497f2; --root: #e6eeee; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1a1f; --panel: #16242b; --ink: #e6eeee; --muted: #9db0b4; --rule: #2a3b42;
+  --t1: #3fc1b4; --t2: #e3a54f; --t3: #a497f2; --root: #e6eeee; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); }
+header { padding: 28px 24px 8px; max-width: 1280px; margin: 0 auto; }
+h1 { font-family: var(--display); font-weight: 600; font-size: clamp(28px, 4vw, 40px); margin: 0 0 6px; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 70ch; margin: 0; line-height: 1.5; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.stat { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 14px; min-width: 150px; }
+.stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: 13px; }
+.stat i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
+main { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr); gap: 16px; max-width: 1280px; margin: 0 auto; padding: 12px 24px 32px; }
+@media (max-width: 860px) { main { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; }
+.mapwrap { padding: 8px; position: relative; }
+svg { width: 100%; height: auto; display: block; }
+.ringlabel { font-family: var(--mono); font-size: 10px; fill: var(--muted); }
+.themelabel { font-size: 11px; fill: var(--muted); font-weight: 500; }
+.node { cursor: pointer; transition: opacity .15s; }
+.node:focus { outline: none; }
+.node:focus circle, .node.active circle { stroke: var(--ink); stroke-width: 2; }
+.dim { opacity: .14; }
+#tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); padding: 8px 10px; border-radius: 6px; font-size: 13px; max-width: 280px; line-height: 1.35; display: none; }
+#tip small { opacity: .8; display: block; }
+.side { padding: 16px; display: flex; flex-direction: column; gap: 12px; min-height: 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.controls input { flex: 1 1 180px; padding: 8px 10px; border-radius: 6px; border: 1px solid var(--rule); background: var(--bg); color: var(--ink); font: inherit; }
+.chip { border: 1px solid var(--rule); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 6px 10px; font: inherit; font-size: 13px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip:focus-visible, .controls input:focus-visible, .node:focus-visible { outline: 2px solid var(--t1); outline-offset: 2px; }
+#list { overflow-y: auto; max-height: 560px; border-top: 1px solid var(--rule); }
+.row { display: grid; grid-template-columns: 14px 1fr auto; gap: 10px; padding: 9px 2px; border-bottom: 1px solid var(--rule); align-items: baseline; }
+.row i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.row .n { font-weight: 500; }
+.row .d { color: var(--muted); font-size: 13px; line-height: 1.35; }
+.row .y { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.count { color: var(--muted); font-size: 13px; }
+footer { max-width: 1280px; margin: 0 auto; padding: 0 24px 32px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+footer a { color: inherit; }
+@media (prefers-reduced-motion: reduce) { .node { transition: none; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Library of the Commons</h1>
+  <p class="lede">A first map of Elinor Ostrom's academic lineage: the Workshop PhDs and affiliated scholars who carry her work on governing the commons. Inner ring: dissertations on commons, resources and collective action. Middle ring: other institutional analysis. Outer ring: affiliated faculty. Built for the Global Commons Initiative as the start of a brain trust.</p>
+  <div class="stats" id="stats"></div>
+</header>
+<main>
+  <section class="card mapwrap" aria-label="Lineage map">
+    <svg id="map" viewBox="-460 -460 920 920" role="img" aria-label="Radial map of Ostrom's academic lineage"></svg>
+    <div id="tip" role="status"></div>
+  </section>
+  <section class="card side" aria-label="Register of names">
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search names, topics, places" aria-label="Search names, topics, places">
+    </div>
+    <div class="controls" id="tiers"></div>
+    <div class="controls" id="themes"></div>
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+  </section>
+</main>
+<footer>
+  Source: <a href="https://ostromworkshop.indiana.edu/pdf/ArtisansOfPoliticalTheory_Jagger.pdf">Artisans of Political Theory and Empirical Inquiry</a>, Vincent and Elinor Ostrom Workshop, Indiana University (c. 2009–10), Appendices A–C. First generation only; the source lists dissertations supervised by Workshop faculty, not only by Ostrom herself. Tiers are first-pass labels, not probabilities. Next pass: later PhDs, students of students, and the citation network. Open data in the Global Commons repository under <code>data/lineage/</code>.
+</footer>
+<script>
+const DATA = __DATA__;
+const TIER = {
+  T1: { label: "Commons PhDs", color: "--t1", r: 210 },
+  T2: { label: "Institutional analysis PhDs", color: "--t2", r: 305 },
+  T3: { label: "Affiliated faculty", color: "--t3", r: 395 },
+};
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const svgNS = "http://www.w3.org/2000/svg";
+const map = document.getElementById("map");
+const tip = document.getElementById("tip");
+const nodes = DATA.nodes;
+const people = nodes.filter(n => n.tier !== "T0");
+
+const themeOrder = ["Forests","Water and irrigation","Fisheries and oceans","Land and property rights","Environmental policy","Collective action and experiments","Public services and policing","Constitutional and political theory","Other institutional analysis","Affiliated faculty"];
+const state = { q: "", tier: null, theme: null, active: null };
+
+function el(tag, attrs, parent) {
+  const e = document.createElementNS(svgNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+
+// stats
+const stats = document.getElementById("stats");
+const counts = { T1: 0, T2: 0, T3: 0 };
+people.forEach(p => counts[p.tier]++);
+stats.innerHTML = `<div class="stat"><b>${people.length}</b><span>scholars mapped</span></div>` +
+  Object.keys(TIER).map(t => `<div class="stat"><b>${counts[t]}</b><span><i style="background:var(${TIER[t].color})"></i>${TIER[t].label}</span></div>`).join("");
+
+// layout: each ring sorted by theme then year
+const positions = {};
+Object.keys(TIER).forEach(t => {
+  const ring = people.filter(p => p.tier === t)
+    .sort((a, b) => themeOrder.indexOf(a.theme) - themeOrder.indexOf(b.theme) || (a.year || 0) - (b.year || 0) || a.name.localeCompare(b.name));
+  ring.forEach((p, i) => {
+    const a = -Math.PI / 2 + (i + 0.5) / ring.length * Math.PI * 2;
+    positions[p.id] = { x: Math.cos(a) * TIER[t].r, y: Math.sin(a) * TIER[t].r, a };
+  });
+});
+
+function draw() {
+  map.innerHTML = "";
+  const g = el("g", {}, map);
+  // rings
+  Object.keys(TIER).forEach(t => {
+    el("circle", { cx: 0, cy: 0, r: TIER[t].r, fill: "none", stroke: css("--rule"), "stroke-dasharray": "2 4" }, g);
+    const lbl = el("text", { x: 4, y: -TIER[t].r - 6, class: "ringlabel" }, g);
+    lbl.textContent = TIER[t].label.toUpperCase();
+  });
+  // theme labels on inner rings: label at the mean angle of each theme cluster
+  ["T1"].forEach(t => {
+    const groups = {};
+    people.filter(p => p.tier === t).forEach(p => { (groups[p.theme] = groups[p.theme] || []).push(positions[p.id].a); });
+    Object.entries(groups).forEach(([theme, angles]) => {
+      if (angles.length < 4) return;
+      const a = angles.reduce((s, v) => s + v, 0) / angles.length;
+      const r = TIER[t].r - 34;
+      const x = Math.cos(a) * r, y = Math.sin(a) * r;
+      const txt = el("text", { x, y, class: "themelabel", "text-anchor": Math.abs(x) < 40 ? "middle" : (x > 0 ? "end" : "start"), "dominant-baseline": "middle" }, g);
+      txt.textContent = theme;
+    });
+  });
+  // edges (light)
+  people.forEach(p => {
+    const pos = positions[p.id];
+    el("line", { x1: 0, y1: 0, x2: pos.x, y2: pos.y, stroke: css("--rule"), "stroke-width": 0.6, class: "edge", "data-id": p.id }, g);
+  });
+  // root
+  el("circle", { cx: 0, cy: 0, r: 34, fill: css("--root") }, g);
+  const rt = el("text", { x: 0, y: -3, "text-anchor": "middle", fill: css("--bg"), "font-family": "Newsreader, serif", "font-size": 15, "font-weight": 600 }, g);
+  rt.textContent = "Elinor";
+  const rt2 = el("text", { x: 0, y: 13, "text-anchor": "middle", fill: css("--bg"), "font-family": "Newsreader, serif", "font-size": 15, "font-weight": 600 }, g);
+  rt2.textContent = "Ostrom";
+  // nodes
+  people.forEach(p => {
+    const pos = positions[p.id];
+    const ng = el("g", { class: "node", tabindex: 0, "data-id": p.id, role: "button", "aria-label": `${p.name}, ${p.detail}` }, g);
+    el("circle", { cx: pos.x, cy: pos.y, r: 7, fill: css(TIER[p.tier].color), stroke: css("--panel"), "stroke-width": 1.5 }, ng);
+    ng.addEventListener("mouseenter", e => showTip(p, e));
+    ng.addEventListener("mousemove", e => moveTip(e));
+    ng.addEventListener("mouseleave", hideTip);
+    ng.addEventListener("click", () => select(p.id));
+    ng.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(p.id); } });
+  });
+  applyFilter();
+}
+
+function showTip(p, e) {
+  tip.innerHTML = `<b>${p.name}</b>${p.year ? " · " + p.year : ""}<small>${p.detail}</small>${p.later_affiliation ? `<small>Later: ${p.later_affiliation}</small>` : ""}`;
+  tip.style.display = "block"; moveTip(e);
+}
+function moveTip(e) {
+  const box = e.currentTarget.ownerSVGElement.parentNode.getBoundingClientRect();
+  let x = e.clientX - box.left + 12, y = e.clientY - box.top + 12;
+  if (x > box.width - 290) x -= 300;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hideTip() { tip.style.display = "none"; }
+
+function matches(p) {
+  if (state.tier && p.tier !== state.tier) return false;
+  if (state.theme && p.theme !== state.theme) return false;
+  if (state.q) {
+    const hay = `${p.name} ${p.detail} ${p.theme} ${p.later_affiliation || ""}`.toLowerCase();
+    if (!hay.includes(state.q)) return false;
+  }
+  return true;
+}
+
+function applyFilter() {
+  const shown = people.filter(matches);
+  const ids = new Set(shown.map(p => p.id));
+  map.querySelectorAll(".node").forEach(n => {
+    n.classList.toggle("dim", !ids.has(n.dataset.id));
+    n.classList.toggle("active", n.dataset.id === state.active);
+  });
+  map.querySelectorAll(".edge").forEach(e => {
+    const on = e.dataset.id === state.active;
+    e.setAttribute("stroke", on ? css("--ink") : css("--rule"));
+    e.setAttribute("stroke-width", on ? 1.6 : 0.6);
+    e.classList.toggle("dim", !ids.has(e.dataset.id));
+  });
+  document.getElementById("count").textContent = `${shown.length} of ${people.length} shown`;
+  const list = document.getElementById("list");
+  const sorted = shown.slice().sort((a, b) => a.tier.localeCompare(b.tier) || (b.year || 0) - (a.year || 0) || a.name.localeCompare(b.name));
+  list.innerHTML = sorted.map(p => `<div class="row" data-id="${p.id}"><i style="background:var(${TIER[p.tier].color})"></i><div><div class="n">${p.name}</div><div class="d">${p.detail}${p.later_affiliation ? " · later " + p.later_affiliation : ""}</div></div><div class="y">${p.year || ""}</div></div>`).join("");
+  list.querySelectorAll(".row").forEach(r => r.addEventListener("click", () => select(r.dataset.id)));
+}
+
+function select(id) { state.active = state.active === id ? null : id; applyFilter(); }
+
+function chips(containerId, items, key) {
+  const c = document.getElementById(containerId);
+  c.innerHTML = "";
+  const all = document.createElement("button");
+  all.className = "chip"; all.textContent = key === "tier" ? "All tiers" : "All themes";
+  all.setAttribute("aria-pressed", "true");
+  c.appendChild(all);
+  const btns = [all];
+  items.forEach(([val, label]) => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.textContent = label; b.setAttribute("aria-pressed", "false");
+    b.dataset.val = val; c.appendChild(b); btns.push(b);
+  });
+  btns.forEach(b => b.addEventListener("click", () => {
+    state[key] = b.dataset.val || null;
+    btns.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    applyFilter();
+  }));
+}
+
+chips("tiers", Object.keys(TIER).map(t => [t, TIER[t].label]), "tier");
+const presentThemes = themeOrder.filter(t => people.some(p => p.theme === t));
+chips("themes", presentThemes.map(t => [t, t]), "theme");
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); applyFilter(); });
+draw();
+new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+</script>
+</body>
+</html>
