@@ -1,4 +1,5 @@
-"""Validate data/registry/*.json against schema/commons.schema.json, then apply the
+"""Validate data/registry/*.json against schema/commons.schema.json (and the blue carbon
+sites and practices against theirs), then apply the
 Bermuda Standard lineage rule: a claim marked settled needs at least min_lineages
 (default 2) distinct supporting lineages, and none contradicting it."""
 import glob, json, sys
@@ -34,5 +35,22 @@ for path in sorted(glob.glob("data/registry/*.json")):
         for e in v.iter_errors(entry):
             report(path, entry, f"{'/'.join(map(str, e.path))}: {e.message}")
         check_claims(path, entry)
+
+# Blue carbon sites and practices (docs/blue-carbon-registry.md).
+commons_ids = {e.get("id") for p in glob.glob("data/registry/*.json") for e in json.load(open(p))}
+for pattern, schema_path in [("data/blue-carbon/*.json", "schema/blue-carbon-site.schema.json"),
+                             ("data/practices/*.json", "schema/practice.schema.json")]:
+    sv = Draft202012Validator(json.load(open(schema_path)))
+    seen = set()
+    for path in sorted(glob.glob(pattern)):
+        for entry in json.load(open(path)):
+            for e in sv.iter_errors(entry):
+                report(path, entry, f"{'/'.join(map(str, e.path))}: {e.message}")
+            if entry.get("id") in seen:
+                report(path, entry, "duplicate id")
+            seen.add(entry.get("id"))
+            if "commons" in entry and entry["commons"] not in commons_ids:
+                report(path, entry, f"commons {entry['commons']!r} is not in data/registry")
+
 print("ok" if not errors else f"{errors} error(s)")
 sys.exit(1 if errors else 0)

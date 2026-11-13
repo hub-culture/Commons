@@ -261,5 +261,62 @@
     "cloud_mirror_spoke": "global-commons",
     "status": "candidate",
     "sources": []
+  },
+  {
+    "id": "blue-carbon-ecosystems",
+    "name": "Coastal blue carbon ecosystems (Open Blue Carbon Registry)",
+    "kind": "ocean",
+    "ladder_step": 2,
+    "summary": "Mangroves, tidal marshes and seagrass meadows store dense, long-lived carbon and are still being lost. National laws and voluntary carbon standards exist, but sites keep disappearing and payouts rarely reach the people who keep them. The ocean commons' first working module: an open registry of sites, evidence and keepers.",
+    "boundaries": {
+      "type": "polygon",
+      "geojson": null,
+      "notes": "Each site in data/blue-carbon/ carries its own boundary; the commons is their union, starting with the Atlantic Rim."
+    },
+    "terms": [
+      "Blue carbon ecosystem (established): mangrove, tidal marsh or seagrass meadow, as in the IPCC 2013 Wetlands Supplement.",
+      "Emerging: other coastal and open-ocean carbon approaches, carried with evidence but never credit-ready in the registry."
+    ],
+    "users": {
+      "inliers": [
+        "Coastal communities and fishers",
+        "Local conservation NGOs",
+        "Environment agencies"
+      ],
+      "outliers": [
+        "Coastal developers",
+        "Unregulated aquaculture"
+      ],
+      "opponents": [],
+      "seasonal": [
+        "Tourism operators",
+        "Migratory species"
+      ]
+    },
+    "rules": [
+      {
+        "name": "VM0033 Methodology for Tidal Wetland and Seagrass Restoration",
+        "instrument": "Verra VCS methodology (v2.1; v3.0 in consultation 2026)",
+        "status": "voluntary",
+        "source": "https://verra.org/methodologies/vm0033-methodology-for-tidal-wetland-and-seagrass-restoration-v2-1/"
+      },
+      {
+        "name": "IPCC 2013 Wetlands Supplement",
+        "instrument": "National greenhouse gas inventory guidance",
+        "status": "voluntary",
+        "source": "https://www.ipcc.ch/publication/2013-supplement-to-the-2006-ipcc-guidelines-for-national-greenhouse-gas-inventories-wetlands/"
+      }
+    ],
+    "remuneration": {
+      "mechanism": "Ocean Climate Fund micro-funding for missing evidence; credit revenue through standards; the Gaia virtual ocean layer",
+      "local_value": "Set per site with its keepers."
+    },
+    "stories": [],
+    "cloud_mirror_spoke": "global-commons",
+    "status": "candidate",
+    "sources": [
+      "https://github.com/hub-culture/Commons/blob/main/docs/blue-carbon-registry.md",
+      "https://github.com/hub-culture/Ocean"
+    ]
   }
 ]

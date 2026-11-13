@@ -1,0 +1,97 @@
+[
+  {
+    "id": "mpa-guide-protection-levels",
+    "name": "The MPA Guide: stages and levels of protection",
+    "family": "mpa-governance",
+    "part": "terms",
+    "commons_kinds": [
+      "ocean"
+    ],
+    "summary": "Describe every marine protected area by its stage of establishment and its level of protection (fully, highly, lightly or minimally protected), so that a 'paper park' and a no-take reserve are never counted as the same thing.",
+    "how": [
+      "Classify the MPA's stage: proposed, designated, implemented or actively managed.",
+      "Classify its level of protection from the activities allowed inside.",
+      "Report both alongside area, so targets count protection, not just lines on a map."
+    ],
+    "worked_in": [
+      "Adopted by MPAtlas and widely used in 30x30 reporting"
+    ],
+    "limits": [
+      "Classifies rules on paper; outcomes still need monitoring."
+    ],
+    "ostrom_principles": [
+      1,
+      2
+    ],
+    "evidence": [
+      {
+        "citation": "Grorud-Colvert, K. et al. (2021). The MPA Guide: A framework to achieve global goals for the ocean. Science 373, eabf0861.",
+        "url": "https://doi.org/10.1126/science.abf0861"
+      }
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "blue-carbon-disaggregated-soil-data",
+    "name": "Publish blue carbon soil data disaggregated, core by core",
+    "family": "blue-carbon-mrv",
+    "part": "monitoring",
+    "commons_kinds": [
+      "ocean",
+      "land"
+    ],
+    "summary": "Publish every soil core (depth series, dry bulk density, organic carbon, dating) rather than a site average, with standard vocabulary, so stocks can be rechecked and national averages corrected.",
+    "how": [
+      "Collect cores to at least 1 m where possible.",
+      "Publish disaggregated data with methods and a DOI.",
+      "Contribute to the Coastal Carbon Network Data Library."
+    ],
+    "worked_in": [
+      "Coastal Carbon Network: about 15,000 cores from every continent except Antarctica"
+    ],
+    "limits": [
+      "Mangrove and seagrass cores, and burial rates, remain under-represented, especially outside the US."
+    ],
+    "ostrom_principles": [
+      4
+    ],
+    "evidence": [
+      {
+        "citation": "Holmquist, J.R. et al. (2024). The Coastal Carbon Library and Atlas: Open source soil data and tools supporting blue carbon research and policy. Global Change Biology 30, e17098.",
+        "url": "https://doi.org/10.1111/gcb.17098"
+      }
+    ],
+    "status": "candidate"
+  },
+  {
+    "id": "seagrass-grazing-exclusion-monitoring",
+    "name": "Grazing exclusion plots to separate grazing from water-quality loss in seagrass",
+    "family": "blue-carbon-mrv",
+    "part": "monitoring",
+    "commons_kinds": [
+      "ocean"
+    ],
+    "summary": "Fence small plots of seagrass from grazers and compare them with open plots, to tell whether a meadow is being lost to grazing or to water quality before deciding how to protect it.",
+    "how": [
+      "Set paired caged and open plots at permanent monitoring sites.",
+      "Track shoot density, leaf size and canopy over at least a year.",
+      "Combine with water-quality and stable-isotope indicators."
+    ],
+    "worked_in": [
+      "Bermuda Platform: caged Thalassia plots recovered while grazed plots declined"
+    ],
+    "limits": [
+      "A diagnostic, not a management answer: green turtles are themselves protected, and any intervention must be weighed for both."
+    ],
+    "ostrom_principles": [
+      4
+    ],
+    "evidence": [
+      {
+        "citation": "Fourqurean, J.W. et al. (2010). Effects of excluding sea turtle herbivores from a seagrass bed. Marine Ecology Progress Series 419, 223-232.",
+        "url": "https://doi.org/10.3354/meps08853"
+      }
+    ],
+    "status": "candidate"
+  }
+]

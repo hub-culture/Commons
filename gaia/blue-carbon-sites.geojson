@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "bc-ashton-lagoon-union-island",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.42,
+          12.59
+        ]
+      },
+      "properties": {
+        "slug": "bc-ashton-lagoon-union-island",
+        "name": "Ashton Lagoon, Union Island",
+        "ecosystem": "mangrove, seagrass",
+        "class": "established",
+        "status": "registered",
+        "country": "VCT",
+        "listing": "public-record-only",
+        "commons": "blue-carbon-ecosystems",
+        "location_precision": "indicative",
+        "registry_url": "https://github.com/hub-culture/Commons/blob/main/data/blue-carbon/sites.json"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bc-bermuda-seagrass",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.75,
+          32.35
+        ]
+      },
+      "properties": {
+        "slug": "bc-bermuda-seagrass",
+        "name": "Bermuda Platform seagrass meadows",
+        "ecosystem": "seagrass",
+        "class": "established",
+        "status": "registered",
+        "country": "BMU",
+        "listing": "public-record-only",
+        "commons": "blue-carbon-ecosystems",
+        "location_precision": "indicative",
+        "registry_url": "https://github.com/hub-culture/Commons/blob/main/data/blue-carbon/sites.json"
+      }
+    }
+  ]
+}
