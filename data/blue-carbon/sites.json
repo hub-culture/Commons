@@ -1,0 +1,161 @@
+[
+  {
+    "id": "bc-ashton-lagoon-union-island",
+    "name": "Ashton Lagoon, Union Island",
+    "commons": "blue-carbon-ecosystems",
+    "ecosystem": [
+      "mangrove",
+      "seagrass"
+    ],
+    "class": "established",
+    "status": "registered",
+    "location": {
+      "country": "VCT",
+      "place": "South coast of Union Island, St Vincent and the Grenadines",
+      "lat": 12.59,
+      "lon": -61.42,
+      "boundary": null,
+      "h3_cells": []
+    },
+    "keepers": [
+      {
+        "role": "Local NGO leading the restoration",
+        "organisation": "Sustainable Grenadines Inc. (SusGren)"
+      },
+      {
+        "role": "Union Island community associations"
+      }
+    ],
+    "consent": {
+      "listed": "public-record-only",
+      "fpic": false,
+      "notes": "Listed from public reports as a candidate. Community details, boundary and claims wait for SusGren and the community to confirm. Location is an approximate centroid."
+    },
+    "claims": [
+      {
+        "quantity": "area_ha",
+        "value": 25,
+        "unit": "ha",
+        "as_of": "2015",
+        "state": "unlit",
+        "evidence": [
+          {
+            "source": "Searchlight (St Vincent), 6 Oct 2015",
+            "lineage": "press",
+            "url": "https://www.searchlight.vc/news/2015/10/06/ashton-lagoon-restoration-project-launched/"
+          }
+        ]
+      },
+      {
+        "quantity": "threat",
+        "value": "Tidal flow cut by the causeway of an abandoned 1990s marina project",
+        "state": "unlit",
+        "evidence": [
+          {
+            "source": "SusGren report to TNC, Dec 2017",
+            "lineage": "susgren",
+            "url": "https://philipstephensonfoundation.org/_files/ugd/bd4f54_86dd4a5a3b0e4f55afe2a76701244ea4.pdf"
+          }
+        ]
+      }
+    ],
+    "permanence_risks": [
+      "Hurricane damage",
+      "Sea-level rise",
+      "Restricted tidal exchange"
+    ],
+    "external_registrations": [],
+    "remuneration": {
+      "mechanism": "To be defined with the keepers",
+      "keepers_share": null,
+      "local_value": "To be defined with the community."
+    },
+    "stories": [
+      "The largest mangrove forest and lagoon in St Vincent and the Grenadines. A marina project abandoned in the 1990s left a causeway that cut its tidal flow; SusGren and the community have been restoring it since 2017."
+    ],
+    "sources": [
+      "https://www.searchlight.vc/news/2017/11/10/restoration-activities-at-ashton-lagoon-begin/"
+    ],
+    "updated": "2026-11-13"
+  },
+  {
+    "id": "bc-bermuda-seagrass",
+    "name": "Bermuda Platform seagrass meadows",
+    "commons": "blue-carbon-ecosystems",
+    "ecosystem": [
+      "seagrass"
+    ],
+    "class": "established",
+    "status": "registered",
+    "location": {
+      "country": "BMU",
+      "place": "Bermuda Platform, offshore and nearshore meadows",
+      "lat": 32.35,
+      "lon": -64.75,
+      "boundary": null,
+      "h3_cells": []
+    },
+    "keepers": [
+      {
+        "role": "Government environment agency",
+        "organisation": "Government of Bermuda, Department of Environment and Natural Resources"
+      }
+    ],
+    "consent": {
+      "listed": "public-record-only",
+      "fpic": false,
+      "notes": "Listed from published research as a candidate; to be confirmed with the Government of Bermuda and local partners."
+    },
+    "claims": [
+      {
+        "quantity": "area_change_ha",
+        "value": -475,
+        "unit": "ha",
+        "as_of": "2007",
+        "state": "unlit",
+        "evidence": [
+          {
+            "source": "Murdoch et al. 2007, as reported in Holzer and McGlathery 2016 (Marine Biology)",
+            "lineage": "published-research",
+            "url": "https://doi.org/10.1007/s00227-016-2855-5"
+          }
+        ]
+      },
+      {
+        "quantity": "threat",
+        "value": "Overgrazing by juvenile green turtles (Chelonia mydas)",
+        "state": "unlit",
+        "evidence": [
+          {
+            "source": "Fourqurean et al. 2019, Estuaries and Coasts",
+            "lineage": "published-research",
+            "url": "https://doi.org/10.1007/s12237-019-00587-1"
+          },
+          {
+            "source": "Fourqurean et al. 2010, Marine Ecology Progress Series",
+            "lineage": "published-research",
+            "url": "https://doi.org/10.3354/meps08853"
+          }
+        ]
+      }
+    ],
+    "permanence_risks": [
+      "Grazing pressure",
+      "Water quality",
+      "Marine heatwaves"
+    ],
+    "external_registrations": [],
+    "remuneration": {
+      "mechanism": "To be defined",
+      "keepers_share": null,
+      "local_value": "To be defined."
+    },
+    "stories": [
+      "Nearly half of Bermuda's offshore seagrass (about 475 of 900 ha) was lost; a decade of monitoring at 17 sites found decline at all of them and attributed it to green turtle grazing. A test of the registry's rule that condition must be watched, not assumed."
+    ],
+    "sources": [
+      "https://environment.bm/news-hot-topics/2012/8/24/green-turtles-and-their-essential-habitats-on-the-bermuda-pl.html"
+    ],
+    "updated": "2026-11-13"
+  }
+]

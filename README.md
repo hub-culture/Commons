@@ -12,7 +12,10 @@ The global commons already exists. Oceans, the atmosphere, genetic resources, th
 | [`data/lineage/`](data/lineage/) | **Library of the Commons, first pass.** 149 scholars in Elinor Ostrom's lineage (Workshop PhDs and affiliated faculty), tiered and themed, as CSV and JSON. |
 | [`docs/lineage-map.html`](docs/lineage-map.html) | An interactive map of that lineage. Open it in any browser. |
 | [`data/registry/`](data/registry/) | A seed registry of commons, each placed on the rules ladder, in the format Gaia map layers will use. |
-| [`schema/`](schema/) | JSON Schema for registry entries. |
+| [`schema/`](schema/) | JSON Schema for registry entries, blue carbon sites and practices. |
+| [`docs/blue-carbon-registry.md`](docs/blue-carbon-registry.md) | **The Open Blue Carbon Registry**: the ocean as the first test case, how sites are registered, checked by the QEM and onboarded through the Ocean Climate Fund. |
+| [`data/blue-carbon/`](data/blue-carbon/) | Candidate blue carbon sites (listed from public records until their keepers confirm). |
+| [`data/practices/`](data/practices/) | Practices that worked in one commons, structured so the next can reuse them, starting with MPA governance and blue carbon measurement. |
 | [`gaia/`](gaia/) | The registry as a **Gaia synced source** (manifest plus GeoJSON). Add `commons=https://raw.githubusercontent.com/hub-culture/Commons/main/gaia/layers.json` to Gaia's `GAIA_SOURCES` and it appears as the `commons.registry` layer. Rebuild with `python scripts/export_gaia_layers.py`. |
 | [`docs/cloud-mirror.md`](docs/cloud-mirror.md) | How the Global Commons connects to Cloud Mirror, Propel, Gaia, Mandala and Ven. |
 | [`docs/coalitions.md`](docs/coalitions.md) | How Coalitions, Cloud Mirror communities and the Global Commons fit one structure: communities, projects, treasuries and one decision engine. |
@@ -34,7 +37,7 @@ cd Commons
 python scripts/build_lineage.py
 python scripts/render_lineage_map.py
 
-# Check the registry against its schema
+# Check the registries (commons, blue carbon sites, practices) against their schemas
 pip install jsonschema
 python scripts/validate_registry.py
 

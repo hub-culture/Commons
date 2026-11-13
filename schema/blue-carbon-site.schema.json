@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hub-culture/Commons/schema/blue-carbon-site.schema.json",
+  "title": "Open Blue Carbon Registry site",
+  "description": "One blue carbon site: where it is, who keeps it, what is claimed about it and what evidence lights each claim. See docs/blue-carbon-registry.md.",
+  "type": "object",
+  "required": ["id", "name", "ecosystem", "class", "status", "location", "keepers", "consent", "claims", "updated"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^bc-[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "commons": { "type": "string", "description": "The id of the commons registry entry this site belongs to (data/registry)." },
+    "ecosystem": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["mangrove", "tidal-marsh", "seagrass", "tidal-forest", "macroalgae", "phytoplankton", "shellfish-reef", "other"] }
+    },
+    "class": {
+      "enum": ["established", "emerging"],
+      "description": "established: mangroves, tidal marshes, seagrass (IPCC 2013 Wetlands Supplement). emerging: everything else; never credit-ready in this registry."
+    },
+    "status": { "enum": ["registered", "mapped", "evidenced", "verified", "credit-ready", "lost", "withdrawn"] },
+    "location": {
+      "type": "object",
+      "required": ["country", "lat", "lon"],
+      "properties": {
+        "country": { "type": "string", "description": "ISO 3166-1 alpha-3" , "pattern": "^[A-Z]{3}$" },
+        "place": { "type": "string" },
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lon": { "type": "number", "minimum": -180, "maximum": 180 },
+        "boundary": { "type": ["object", "null"], "description": "GeoJSON Polygon or MultiPolygon; required from status mapped on." },
+        "h3_cells": { "type": "array", "items": { "type": "string" }, "description": "H3 cells covering the boundary (resolution 9 unless stated); used for overlap checks and the Gaia layer." },
+        "eez": { "type": "string" },
+        "protected_areas": { "type": "array", "items": { "type": "string" }, "description": "WDPA ids or names of protected areas the site falls in." }
+      }
+    },
+    "keepers": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["role"],
+        "properties": {
+          "role": { "type": "string", "description": "e.g. community association, NGO, government agency, landowner. Organisations, not private individuals." },
+          "organisation": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "consent": {
+      "type": "object",
+      "required": ["listed"],
+      "properties": {
+        "listed": { "enum": ["confirmed", "pending", "public-record-only"], "description": "confirmed: keepers agreed to listing. pending: asked, awaiting answer. public-record-only: listed from public sources only, no community details until confirmed." },
+        "fpic": { "type": "boolean", "description": "Free, prior and informed consent recorded where communities are involved." },
+        "notes": { "type": "string" }
+      }
+    },
+    "rights": {
+      "type": "array",
+      "items": { "type": "object", "properties": { "right": { "type": "string" }, "responsibility": { "type": "string" }, "holder": { "type": "string" } } }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["quantity", "state"],
+        "properties": {
+          "quantity": { "enum": ["area_ha", "area_change_ha", "soil_carbon_stock_tc_ha", "biomass_carbon_stock_tc_ha", "sequestration_tco2e_ha_yr", "condition", "threat", "protection"] },
+          "value": { "type": ["number", "string", "null"] },
+          "unit": { "type": "string" },
+          "as_of": { "type": "string", "description": "Date or year the claim refers to." },
+          "state": { "enum": ["unlit", "glimmer", "lit", "bright", "radiant", "dimmed", "snuffed"], "description": "The QEM's verdict on the claim: unlit until independent lineages agree." },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source", "lineage"],
+              "properties": {
+                "source": { "type": "string", "description": "A QEM source id (sources/registry.json) or a citation." },
+                "lineage": { "type": "string" },
+                "url": { "type": "string", "format": "uri" },
+                "speck": { "type": "string", "description": "QEM speck id, once the claim is in the store." }
+              }
+            }
+          }
+        }
+      }
+    },
+    "permanence_risks": { "type": "array", "items": { "type": "string" } },
+    "external_registrations": {
+      "type": "array",
+      "description": "Other registries holding this site, to prevent double counting.",
+      "items": {
+        "type": "object",
+        "required": ["registry", "id"],
+        "properties": {
+          "registry": { "type": "string" },
+          "id": { "type": "string" },
+          "methodology": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "remuneration": {
+      "type": "object",
+      "properties": {
+        "mechanism": { "type": "string" },
+        "keepers_share": { "type": ["string", "null"] },
+        "local_value": { "type": "string" }
+      }
+    },
+    "stories": { "type": "array", "items": { "type": "string" } },
+    "sources": { "type": "array", "items": { "type": "string", "format": "uri" } },
+    "updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "class": { "const": "emerging" } } },
+      "then": { "properties": { "status": { "not": { "const": "credit-ready" } } } }
+    },
+    {
+      "if": { "properties": { "status": { "enum": ["mapped", "evidenced", "verified", "credit-ready"] } } },
+      "then": { "properties": { "location": { "required": ["boundary"], "properties": { "boundary": { "type": "object", "required": ["type", "coordinates"] } } } } }
+    }
+  ]
+}

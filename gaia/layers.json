@@ -15,6 +15,19 @@
       "attribution": [
         "Global Commons Initiative, Hub Culture and contributors (CC BY 4.0)"
       ]
+    },
+    {
+      "id": "blue-carbon",
+      "file": "blue-carbon-sites.geojson",
+      "name": "Open Blue Carbon Registry sites",
+      "description": "Mangrove, tidal marsh and seagrass sites in the Open Blue Carbon Registry, with their class (established or emerging) and status (registered, mapped, evidenced, verified, credit-ready). Points marked indicative are candidate sites listed from public records, not boundaries or claims. The registry issues no carbon credits.",
+      "h3_resolutions": [
+        6,
+        9
+      ],
+      "attribution": [
+        "Open Blue Carbon Registry, Global Commons Initiative, Hub Culture and contributors (CC BY 4.0)"
+      ]
     }
   ],
   "unplaced": [
@@ -38,6 +51,13 @@
       "kind": "agents",
       "ladder_step": 1,
       "boundary_type": "network"
+    },
+    {
+      "slug": "blue-carbon-ecosystems",
+      "name": "Coastal blue carbon ecosystems (Open Blue Carbon Registry)",
+      "kind": "ocean",
+      "ladder_step": 2,
+      "boundary_type": "polygon"
     }
   ]
 }
