@@ -46,7 +46,7 @@ Every agent on HubID has a **Lineage**: the line it traces back to an accountabl
 
 **For the commons:** this is the "governing the AI shepherd" principle, already working. It answers Laura Stein's worry about the agent levy too. Access points (registration, payments, jurisdiction) are gated, so the rules apply to every agent that uses them, rather than relying on agents opting in.
 
-**Proposal:** a share of agent stakes, or a small fee on verification work metered in Ven, flows to the commons treasury, as the agent levy discussed in the sessions.
+**Decided (13 Nov 2026):** the agent levy is collected at those gates. A community may charge agents a fee for naming it as their jurisdiction, with no cap. When a finding against an agent is upheld (by the community's admins, or by a member it nominates through Propel), a share of the agent's stake set in the community's charter is forfeited to the commons treasury. Agents can appeal.
 
 ### DIRT and Gaia: boundaries and bankability
 
@@ -74,13 +74,15 @@ Hub's edge mesh is off-grid messaging over Bluetooth and Wi-Fi, compatible with 
 
 **For the commons:** commons are often where connectivity is weakest. A mesh lets a fishing community or a forest guard post take part (reporting, voting, receiving payment) and sync when a gateway is in reach. That is local-first in practice, and it carries the "edge to centre" idea from the Laura Stein session.
 
+**Decided (13 Nov 2026):** a community gets its edge mesh as a component of a **hub**, alongside the hub's video, Ven account and admin functions, so the mesh runs inside hubs' existing governance rather than as a separate system.
+
 *Naming note:* this repo is called `mesh`, while the workshop calls the whole structure "the mesh". Name the edge network "the edge mesh" so the two don't get confused. Similarly, `data/lineage` in this repo means Ostrom's academic lineage, not data lineage in the QEM sense.
 
 ## What this changes in the plan
 
 1. **Registry claims go through triangulation.** Each commons entry in `data/registry` should name the sources behind its claims and how many independent lineages agree, following the Bermuda Standard's five rules.
 2. **Communities set their own verification rules** in their Cloud Mirror charter, within the Bermuda Standard floor.
-3. **Agent rules come from Mandala.** The commons uses Lineage, stakes and jurisdictions as they are, and adds the levy proposal.
+3. **Agent rules come from Mandala.** The commons uses Lineage, stakes and jurisdictions as they are, plus the agreed levy: an uncapped jurisdiction fee, and forfeiture of stake on upheld findings, with appeal.
 4. **One map.** Commons, DIRT territories, Cloud Mirror communities and Coalition projects all appear as Gaia layers on shared H3 cells. Gaia already syncs layers from any source that publishes a manifest and one GeoJSON file per layer. The production setting brings the three published ones together:
 
    ```
@@ -88,6 +90,6 @@ Hub's edge mesh is off-grid messaging over Bluetooth and Wi-Fi, compatible with 
    ```
 
    Cloud Mirror community boundaries and Coalition places will join as further sources once they publish the same shape.
-5. **Edge participation.** Pilot the edge mesh with one commons that has poor connectivity.
+5. **Edge participation through hubs.** A commons with poor connectivity links to a hub and switches on the hub's edge mesh component.
 
 See also [cloud-mirror.md](cloud-mirror.md), [coalitions.md](coalitions.md) and [roadmap.md](roadmap.md).
