@@ -30,7 +30,7 @@ This matters for the Fund's own pipeline: open-ocean and phytoplankton approache
 
 ## How a site moves through the registry
 
-Each step is a status a site earns. Each one is visible on the Gaia map and is a [Cloud Mirror](cloud-mirror.md) ledger event.
+Each step is a status a site earns. Each one is visible on the Gaia map (the `commons.blue-carbon` layer, exported to [`gaia/`](../gaia/) with the registry) and is a [Cloud Mirror](cloud-mirror.md) ledger event.
 
 | Status | What it takes | Who checks |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ A claim that independent sources contradict dims, as every QEM speck does. A sit
 
 ## What the registry checks against
 
-Every claim becomes a QEM speck with its source, licence and consent attached. The QEM triangulates it against independent lineages: the same rule it already applies to sea temperature and CO₂. These are the public sources each kind of claim is checked against. Global Mangrove Watch, the Coastal Carbon Library, BATS and SOCAT were added to the QEM's source registry (`hub-culture/qem` `sources/registry.json`) as candidates on 13 November 2026; Coral Reef Watch, OBIS and the ODI's sea temperature already run; Sentinel-2, WDPA, MPAtlas and the standards' project lists are still to add.
+Every claim becomes a QEM speck with its source, licence and consent attached: the Bermuda Standard's five rules, as for every claim in the commons registry (see [hub-stack-and-the-commons.md](hub-stack-and-the-commons.md)). The QEM triangulates it against independent lineages: the same rule it already applies to sea temperature and CO₂. These are the public sources each kind of claim is checked against. Global Mangrove Watch, the Coastal Carbon Library, BATS and SOCAT were added to the QEM's source registry (`hub-culture/qem` `sources/registry.json`) as candidates on 13 November 2026; Coral Reef Watch, OBIS and the ODI's sea temperature already run; Sentinel-2, WDPA, MPAtlas and the standards' project lists are still to add.
 
 | Claim | Independent lineages |
 | --- | --- |
@@ -105,7 +105,9 @@ The framework's rule applies: rights come with responsibilities, and payouts con
 - **Rights and responsibilities:** tenure, access and use, paired with monitoring and protection duties.
 - **Remuneration:** the mechanism (OCF grant, credit revenue, the Gaia virtual ocean layer), the keepers' share, and what it converts into locally.
 
-A default keepers' share, and how it is enforced through the Cloud Mirror treasury (escrow, milestone tranches, steward quorum), is an open question for the first pilot community to decide, not for this document.
+In the [shared structure](coalitions.md), each site that reaches `evidenced` can become a community of its own inside the Global Commons: its keepers hold its charter, its money goes to an escrowed treasury, and each piece of work it needs (soil cores, replanting, a survey) is a coalition funded in milestone tranches. Its inflows are the same as any community's: members' commons share, the agent levy, direct gifts, and virtual ocean sold on Gaia.
+
+A default keepers' share, and how it is enforced through the treasury, is an open question for the first pilot community to decide, not for this document.
 
 ## Integrity rules (proposed)
 
