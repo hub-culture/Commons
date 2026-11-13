@@ -14,6 +14,7 @@ The global commons already exists. Oceans, the atmosphere, genetic resources, th
 | [`data/registry/`](data/registry/) | A seed registry of commons, each placed on the rules ladder, in the format Gaia map layers will use. |
 | [`schema/`](schema/) | JSON Schema for registry entries. |
 | [`docs/cloud-mirror.md`](docs/cloud-mirror.md) | How the Global Commons connects to Cloud Mirror, Propel, Gaia, Mandala and Ven. |
+| [`docs/coalitions.md`](docs/coalitions.md) | How Coalitions, Cloud Mirror communities and the Global Commons fit one structure: communities, projects, treasuries and one decision engine. |
 | [`docs/case-studies.md`](docs/case-studies.md) | Cases from the COP31 sessions: Sharm el-Sheikh vs Cancún, Maine lobster, the Cali Fund, planetary protection and more. |
 | [`docs/roadmap.md`](docs/roadmap.md) | What we're building next and how to help. |
 

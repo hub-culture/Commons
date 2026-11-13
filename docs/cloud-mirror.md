@@ -56,7 +56,7 @@ For the Global Commons, the treasury is where remuneration lives: a codified sha
 
 ## Hub Culture Coalitions
 
-Coalitions become the local project layer of the Global Commons: geo-linked on Gaia, funded from the commons treasury in milestone tranches, and governed by steward quorum.
+Coalitions become the local project layer of the Global Commons: geo-linked on Gaia, funded from the commons treasury in milestone tranches, and governed by steward quorum. See [coalitions.md](coalitions.md) for the full mapping.
 
 ## AI agents: the most urgent spoke
 
