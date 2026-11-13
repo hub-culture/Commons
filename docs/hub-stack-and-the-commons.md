@@ -81,7 +81,13 @@ Hub's edge mesh is off-grid messaging over Bluetooth and Wi-Fi, compatible with 
 1. **Registry claims go through triangulation.** Each commons entry in `data/registry` should name the sources behind its claims and how many independent lineages agree, following the Bermuda Standard's five rules.
 2. **Communities set their own verification rules** in their Cloud Mirror charter, within the Bermuda Standard floor.
 3. **Agent rules come from Mandala.** The commons uses Lineage, stakes and jurisdictions as they are, and adds the levy proposal.
-4. **One map.** Commons, DIRT territories, Cloud Mirror communities and Coalition projects all appear as Gaia layers on shared H3 cells.
+4. **One map.** Commons, DIRT territories, Cloud Mirror communities and Coalition projects all appear as Gaia layers on shared H3 cells. Gaia already syncs layers from any source that publishes a manifest and one GeoJSON file per layer. The production setting brings the three published ones together:
+
+   ```
+   GAIA_SOURCES=commons=https://raw.githubusercontent.com/hub-culture/Commons/main/gaia/layers.json,dirt=<dirt.community>/gaia,qem=<ocean data initiative layers>
+   ```
+
+   Cloud Mirror community boundaries and Coalition places will join as further sources once they publish the same shape.
 5. **Edge participation.** Pilot the edge mesh with one commons that has poor connectivity.
 
 See also [cloud-mirror.md](cloud-mirror.md), [coalitions.md](coalitions.md) and [roadmap.md](roadmap.md).
