@@ -34,5 +34,22 @@ for path in sorted(glob.glob("data/registry/*.json")):
         for e in v.iter_errors(entry):
             report(path, entry, f"{'/'.join(map(str, e.path))}: {e.message}")
         check_claims(path, entry)
+# The projects board (data/projects.json): unique ids, a known status,
+# something to ask for, and https links.
+STATUSES = {"live", "seed", "in-design", "seeking-partners"}
+seen = set()
+for proj in json.load(open("data/projects.json")):
+    pid = proj.get("id")
+    if not pid or pid in seen:
+        report("data/projects.json", proj, "missing or duplicate id")
+    seen.add(pid)
+    if proj.get("status") not in STATUSES:
+        report("data/projects.json", proj, f"status must be one of {sorted(STATUSES)}")
+    if not proj.get("summary") or not proj.get("input_wanted"):
+        report("data/projects.json", proj, "needs a summary and at least one thing it wants input on")
+    for link in proj.get("links", []):
+        if not link.get("url", "").startswith("https://"):
+            report("data/projects.json", proj, f"link {link.get('label')!r} must be https")
+
 print("ok" if not errors else f"{errors} error(s)")
 sys.exit(1 if errors else 0)

@@ -12,6 +12,7 @@ The global commons already exists. Oceans, the atmosphere, genetic resources, th
 | [`data/lineage/`](data/lineage/) | **Library of the Commons, first pass.** 149 scholars in Elinor Ostrom's lineage (Workshop PhDs and affiliated faculty), tiered and themed, as CSV and JSON. |
 | [`docs/lineage-map.html`](docs/lineage-map.html) | An interactive map of that lineage. Open it in any browser. |
 | [`data/registry/`](data/registry/) | A seed registry of commons, each placed on the rules ladder, in the format Gaia map layers will use. |
+| [`data/projects.json`](data/projects.json) | **Early projects open for input**, starting with an open blue carbon registry. Each lists its status and what it needs. Shown at [cloud-mirror.hub.vg/commons](https://cloud-mirror.hub.vg/commons/). |
 | [`schema/`](schema/) | JSON Schema for registry entries. |
 | [`gaia/`](gaia/) | The registry as a **Gaia synced source** (manifest plus GeoJSON). Add `commons=https://raw.githubusercontent.com/hub-culture/Commons/main/gaia/layers.json` to Gaia's `GAIA_SOURCES` and it appears as the `commons.registry` layer. Rebuild with `python scripts/export_gaia_layers.py`. |
 | [`docs/cloud-mirror.md`](docs/cloud-mirror.md) | How the Global Commons connects to Cloud Mirror, Propel, Gaia, Mandala and Ven. |

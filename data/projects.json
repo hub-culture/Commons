@@ -1,0 +1,99 @@
+[
+  {
+    "id": "open-blue-carbon-registry",
+    "name": "Open blue carbon registry",
+    "status": "in-design",
+    "summary": "An open, public registry of blue carbon ecosystems (mangroves, seagrass meadows and salt marshes): where they are, who keeps them, what is measured there, and what has been promised and paid. Every claim carries its sources and settles only when independent lines of evidence agree. It records; it does not issue or sell credits.",
+    "input_wanted": [
+      "Open maps and datasets for mangrove, seagrass and salt-marsh extent",
+      "Measurement methods for carbon stocks and their uncertainty",
+      "Pilot sites with communities ready to keep and record them",
+      "Existing registries to link to rather than duplicate"
+    ],
+    "links": [
+      {"label": "Ocean Data Initiative layers", "url": "https://github.com/hub-culture/Ocean"},
+      {"label": "Propose data or a site", "url": "https://github.com/hub-culture/Commons/issues"}
+    ]
+  },
+  {
+    "id": "ocean-data-initiative",
+    "name": "Ocean Data Initiative",
+    "status": "live",
+    "summary": "Open ocean data, refreshed every week: tide gauges, buoys and Argo floats checked against ocean models, coral reef heat stress, and marine protection and ocean finance for every Atlantic Rim country, as map layers any GIS tool can read.",
+    "input_wanted": [
+      "New open sources and partner datasets",
+      "Corrections where a measurement and a model disagree"
+    ],
+    "links": [
+      {"label": "Data and layers", "url": "https://github.com/hub-culture/Ocean"},
+      {"label": "Ocean Climate Fund", "url": "https://oceanclimatefund.com/data/OceanDataInitiative"}
+    ]
+  },
+  {
+    "id": "commons-registry",
+    "name": "The commons registry",
+    "status": "seed",
+    "summary": "A registry of commons, each placed on the rules ladder (no rules, weak rules, no payout) with its boundaries, users, rules and remuneration, and every claim backed by evidence from independent sources.",
+    "input_wanted": [
+      "Commons to add, with the people who use them",
+      "Better evidence for, or against, a claim already listed"
+    ],
+    "links": [
+      {"label": "Registry data", "url": "https://github.com/hub-culture/Commons/tree/main/data/registry"},
+      {"label": "Schema", "url": "https://github.com/hub-culture/Commons/blob/main/schema/commons.schema.json"}
+    ]
+  },
+  {
+    "id": "library-of-the-commons",
+    "name": "Library of the Commons",
+    "status": "live",
+    "summary": "A map of Elinor Ostrom's academic lineage, starting with the 149 Workshop PhDs and affiliated scholars, as the start of a brain trust that can answer place-specific questions about governing a commons.",
+    "input_wanted": [
+      "Scholars missing from the first generation",
+      "Later affiliations, current work and key publications",
+      "The second generation: students of these scholars"
+    ],
+    "links": [
+      {"label": "Lineage data", "url": "https://github.com/hub-culture/Commons/tree/main/data/lineage"}
+    ]
+  },
+  {
+    "id": "mpa-pilot",
+    "name": "Marine protected area pilot",
+    "status": "seeking-partners",
+    "summary": "One marine protected area, governed with the people who fish and dive there: clear boundaries, local rules, monitoring that pairs community testimony with independent measurement, and payouts to its keepers.",
+    "input_wanted": [
+      "A candidate MPA with an active local group",
+      "Monitoring data and partners on the ground"
+    ],
+    "links": [
+      {"label": "Registry entry", "url": "https://github.com/hub-culture/Commons/blob/main/data/registry/seed.json"}
+    ]
+  },
+  {
+    "id": "medicine-from-biodiversity",
+    "name": "Medicine from biodiversity",
+    "status": "in-design",
+    "summary": "Turning the voluntary global benefit-sharing rule for genetic sequence data into payouts that reach the places and peoples the data comes from.",
+    "input_wanted": [
+      "Cases of medicines traced to a specific place or people",
+      "Companies willing to contribute and report"
+    ],
+    "links": [
+      {"label": "Case studies", "url": "https://github.com/hub-culture/Commons/blob/main/docs/case-studies.md"}
+    ]
+  },
+  {
+    "id": "ai-agent-commons",
+    "name": "AI agent commons",
+    "status": "in-design",
+    "summary": "Rules for the shared networks where AI agents meet: identity, an accountable owner, a charter they accept, verification that counts agents of one model as one voice, and a levy that funds the commons.",
+    "input_wanted": [
+      "Agent builders willing to join under a charter",
+      "Views on fees, findings and appeals for agents"
+    ],
+    "links": [
+      {"label": "The community charter", "url": "https://cloud-mirror.hub.vg/communities/global-commons/"}
+    ]
+  }
+]
