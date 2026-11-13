@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Global Commons</title>
+<meta name="description" content="An open initiative, started at COP31 in Antalya, to map the world's shared resources, strengthen the rules that govern them, and pay the people who keep them.">
+<style>
+  :root { --bg:#0e1116; --card:#161b22; --line:#2a313c; --text:#e6e8eb; --muted:#9aa4b2; --accent:#5fc9a8; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 Georgia, "Times New Roman", serif; }
+  main { max-width:860px; margin:0 auto; padding:56px 24px 72px; }
+  h1 { font-size:40px; font-weight:500; margin:0 0 12px; letter-spacing:-0.01em; }
+  h2 { font:500 13px/1.4 system-ui, sans-serif; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:48px 0 14px; }
+  p.lede { font-size:19px; color:var(--text); margin:0 0 8px; }
+  p { color:var(--muted); }
+  .ladder { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .ladder div, .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; }
+  .ladder b { display:block; font:500 15px system-ui, sans-serif; color:var(--text); margin-bottom:4px; }
+  .ladder span { font:14px/1.5 system-ui, sans-serif; color:var(--muted); }
+  .cards { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+  a.card { text-decoration:none; color:inherit; display:block; transition:border-color .15s; }
+  a.card:hover { border-color:var(--accent); }
+  a.card b { font:500 16px system-ui, sans-serif; color:var(--text); display:block; margin-bottom:4px; }
+  a.card span { font:14px/1.5 system-ui, sans-serif; color:var(--muted); }
+  .feature { border-color:var(--accent); }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font:13px system-ui, sans-serif; color:var(--muted); }
+  footer a { color:var(--accent); }
+  @media (max-width:640px) { .ladder, .cards { grid-template-columns:1fr; } h1 { font-size:32px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>The Global Commons</h1>
+  <p class="lede">An open initiative, started at the COP31 Climate Campus in Antalya in November 2026, to map the world's shared resources, strengthen the rules that govern them, and pay the people who keep them.</p>
+  <p>The global commons already exists: oceans, the atmosphere, genetic resources, grasslands, outer space, and now the networks where AI agents meet. Most already run on some rules. What's missing are rules strong enough, local enough, and that pay back their keepers. Everything here is open: data, framework and code.</p>
+
+  <h2>Where commons fail</h2>
+  <div class="ladder">
+    <div><b>1. No rules</b><span>Nothing agreed, so whoever takes first takes most.</span></div>
+    <div><b>2. Weak rules</b><span>Rules exist but aren't monitored or enforced.</span></div>
+    <div><b>3. No payout</b><span>Rules hold, but the people who keep the commons aren't paid for it.</span></div>
+  </div>
+
+  <h2>Explore</h2>
+  <div class="cards">
+    <a class="card feature" href="lineage-map.html"><b>Library of the Commons</b><span>An interactive map of 149 scholars in Elinor Ostrom's lineage, by theme and tier.</span></a>
+    <a class="card" href="https://github.com/hub-culture/Commons/tree/main/framework"><b>The framework</b><span>The rules ladder, the parts of commons infrastructure, the method and the design principles.</span></a>
+    <a class="card" href="https://github.com/hub-culture/Commons/tree/main/data/registry"><b>The registry</b><span>A seed registry of commons, each placed on the rules ladder, with claims that settle only when independent sources agree.</span></a>
+    <a class="card" href="https://github.com/hub-culture/Commons/blob/main/docs/hub-stack-and-the-commons.md"><b>Ostrom's principles, built</b><span>Which existing tools already do each of the eight design principles, and what was decided at the workshop.</span></a>
+    <a class="card" href="https://github.com/hub-culture/Commons/blob/main/docs/case-studies.md"><b>Case studies</b><span>Sharm el-Sheikh and Cancún, Maine lobster, the Cali Fund, planetary protection and more.</span></a>
+    <a class="card" href="https://github.com/hub-culture/Commons/blob/main/docs/roadmap.md"><b>Roadmap</b><span>What we're building next, and how to help.</span></a>
+  </div>
+
+  <h2>Take part</h2>
+  <p>Propose a commons for the registry, correct a claim with better evidence, or add a scholar to the library: open an issue or a pull request on <a href="https://github.com/hub-culture/Commons" style="color:var(--accent)">GitHub</a>. Communities that want to write and govern their own charter can do so on <a href="https://cloud-mirror.hub.vg" style="color:var(--accent)">Cloud Mirror</a>.</p>
+
+  <footer>Started by Hub Culture at COP31, Antalya. Open source under the MIT licence. <a href="https://github.com/hub-culture/Commons">Source on GitHub</a></footer>
+</main>
+</body>
+</html>
