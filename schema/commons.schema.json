@@ -215,6 +215,89 @@
         "type": "string",
         "format": "uri"
       }
+    },
+    "claims": {
+      "type": "array",
+      "description": "Claims about this commons, each with its evidence, following the Bermuda Standard's five rules (provenance, lineage, agreement, licence and consent, signature). A claim is settled only when enough independent lineages agree; repeating one source adds nothing.",
+      "items": {
+        "type": "object",
+        "required": [
+          "statement",
+          "status",
+          "evidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "statement": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "unverified",
+              "settled",
+              "contested",
+              "refuted"
+            ],
+            "description": "unverified: fewer independent lineages than the rule needs. settled: enough agree. contested: lineages disagree (kept as evidence). refuted: the evidence goes against it (kept on record)."
+          },
+          "min_lineages": {
+            "type": "integer",
+            "minimum": 2,
+            "description": "Independent lineages needed to settle this claim. The Bermuda Standard floor is 2; a community may require more."
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "source",
+                "lineage",
+                "licence",
+                "supports"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "description": "Where it comes from: a URL, a dataset, or a named testimony."
+                },
+                "lineage": {
+                  "type": "string",
+                  "description": "The independent line this evidence belongs to (for example: community testimony, satellite, government registry, peer-reviewed study). Evidence sharing a lineage counts once."
+                },
+                "kind": {
+                  "enum": [
+                    "testimony",
+                    "measurement",
+                    "model",
+                    "registry",
+                    "study",
+                    "reporting",
+                    "other"
+                  ]
+                },
+                "licence": {
+                  "type": "string",
+                  "description": "Licence or terms of use, or 'unknown'."
+                },
+                "consent": {
+                  "type": "string",
+                  "description": "For testimony and community data: whose consent, and for what use."
+                },
+                "signature": {
+                  "type": "string",
+                  "description": "Optional signature or hash binding the evidence as recorded."
+                },
+                "supports": {
+                  "type": "boolean",
+                  "description": "true if it supports the statement, false if it contradicts it."
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

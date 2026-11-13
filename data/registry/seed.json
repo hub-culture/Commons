@@ -46,6 +46,42 @@
     "sources": [
       "https://www.imd.org/ibyimd/brain-circuits/6-things-you-need-to-know-about-the-cali-fund/",
       "https://www.lse.ac.uk/granthaminstitute/wp-content/uploads/2026/06/GRI-working-paper-450-Makowska-Curran.pdf"
+    ],
+    "claims": [
+      {
+        "statement": "The Cali Fund asks companies that use digital sequence information to contribute voluntarily: 1% of profits or 0.1% of revenue.",
+        "status": "settled",
+        "min_lineages": 2,
+        "evidence": [
+          {
+            "source": "https://www.imd.org/ibyimd/brain-circuits/6-things-you-need-to-know-about-the-cali-fund/",
+            "lineage": "IMD (business school reporting)",
+            "kind": "reporting",
+            "licence": "unknown",
+            "supports": true
+          },
+          {
+            "source": "https://www.lse.ac.uk/granthaminstitute/wp-content/uploads/2026/06/GRI-working-paper-450-Makowska-Curran.pdf",
+            "lineage": "LSE Grantham Research Institute",
+            "kind": "study",
+            "licence": "unknown",
+            "supports": true
+          }
+        ]
+      },
+      {
+        "statement": "A gut bacterium of the Japanese tree frog eliminated colorectal tumours in mice.",
+        "status": "unverified",
+        "evidence": [
+          {
+            "source": "2025 study (named in the COP31 session; citation to be added)",
+            "lineage": "single study",
+            "kind": "study",
+            "licence": "unknown",
+            "supports": true
+          }
+        ]
+      }
     ]
   },
   {
@@ -88,6 +124,22 @@
     "status": "candidate",
     "sources": [
       "https://github.com/hub-culture/Ocean"
+    ],
+    "claims": [
+      {
+        "statement": "Every claim about this MPA's condition settles only when community testimony and at least one independent measurement agree.",
+        "status": "unverified",
+        "min_lineages": 2,
+        "evidence": [
+          {
+            "source": "https://github.com/hub-culture/Ocean",
+            "lineage": "Open Ocean Data Initiative",
+            "kind": "registry",
+            "licence": "see repository",
+            "supports": true
+          }
+        ]
+      }
     ]
   },
   {
