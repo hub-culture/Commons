@@ -13,6 +13,7 @@ The global commons already exists. Oceans, the atmosphere, genetic resources, th
 | [`docs/lineage-map.html`](docs/lineage-map.html) | An interactive map of that lineage. Open it in any browser. |
 | [`data/registry/`](data/registry/) | A seed registry of commons, each placed on the rules ladder, in the format Gaia map layers will use. |
 | [`schema/`](schema/) | JSON Schema for registry entries. |
+| [`gaia/`](gaia/) | The registry as a **Gaia synced source** (manifest plus GeoJSON). Add `commons=https://raw.githubusercontent.com/hub-culture/Commons/main/gaia/layers.json` to Gaia's `GAIA_SOURCES` and it appears as the `commons.registry` layer. Rebuild with `python scripts/export_gaia_layers.py`. |
 | [`docs/cloud-mirror.md`](docs/cloud-mirror.md) | How the Global Commons connects to Cloud Mirror, Propel, Gaia, Mandala and Ven. |
 | [`docs/coalitions.md`](docs/coalitions.md) | How Coalitions, Cloud Mirror communities and the Global Commons fit one structure: communities, projects, treasuries and one decision engine. |
 | [`docs/case-studies.md`](docs/case-studies.md) | Cases from the COP31 sessions: Sharm el-Sheikh vs Cancún, Maine lobster, the Cali Fund, planetary protection and more. |
@@ -35,6 +36,9 @@ python scripts/render_lineage_map.py
 # Check the registry against its schema
 pip install jsonschema
 python scripts/validate_registry.py
+
+# Export the registry as a Gaia layer
+python scripts/export_gaia_layers.py
 ```
 
 ## Contributing

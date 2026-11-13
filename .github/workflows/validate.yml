@@ -11,4 +11,5 @@ jobs:
       - run: pip install jsonschema
       - run: python scripts/validate_registry.py
       - run: python scripts/build_lineage.py && python scripts/render_lineage_map.py
-      - run: git diff --exit-code data/lineage docs/lineage-map.html
+      - run: python scripts/export_gaia_layers.py
+      - run: git diff --exit-code data/lineage docs/lineage-map.html gaia

@@ -1,0 +1,43 @@
+{
+  "source": "commons",
+  "name": "Global Commons",
+  "homepage": "https://github.com/hub-culture/Commons",
+  "licence": "CC BY 4.0",
+  "layers": [
+    {
+      "id": "registry",
+      "file": "commons-registry.geojson",
+      "name": "Global Commons registry",
+      "description": "Commons in the Global Commons registry that have a place on the map, each with its step on the rules ladder (1 no rules, 2 weak rules, 3 rules that don't pay out). Points marked indicative are candidate areas, not boundaries or claims.",
+      "h3_resolutions": [
+        4
+      ],
+      "attribution": [
+        "Global Commons Initiative, Hub Culture and contributors (CC BY 4.0)"
+      ]
+    }
+  ],
+  "unplaced": [
+    {
+      "slug": "medicine-from-biodiversity",
+      "name": "Medicine from biodiversity",
+      "kind": "genetic-resources",
+      "ladder_step": 2,
+      "boundary_type": "global"
+    },
+    {
+      "slug": "planetary-protection",
+      "name": "Planetary protection",
+      "kind": "space",
+      "ladder_step": 3,
+      "boundary_type": "orbital"
+    },
+    {
+      "slug": "ai-agent-commons",
+      "name": "AI agent commons",
+      "kind": "agents",
+      "ladder_step": 1,
+      "boundary_type": "network"
+    }
+  ]
+}

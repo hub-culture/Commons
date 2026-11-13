@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "marine-protected-area-pilot",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -27.2,
+          38.7
+        ]
+      },
+      "properties": {
+        "slug": "marine-protected-area-pilot",
+        "name": "Marine protected area pilot (with the Ocean Climate Fund)",
+        "kind": "ocean",
+        "ladder_step": 2,
+        "ladder_step_name": "Weak rules",
+        "status": "candidate",
+        "summary": "MPAs range from strict no-take reserves to paper parks. Outcomes depend on how the MPA is structured, not on how much the area is used, as Sharm el-Sheikh and Cancún show.",
+        "boundary_type": "polygon",
+        "boundary_notes": "Pilot site to be chosen (Azores or Bermuda). Boundary from the Ocean Climate Fund's Gaia layers. Indicative: the Azores, one of two candidate pilot sites (the other is Bermuda).",
+        "rules": "",
+        "cloud_mirror_spoke": "",
+        "registry_url": "https://github.com/hub-culture/Commons/blob/main/data/registry/seed.json",
+        "location_precision": "indicative"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "renewable-citizen-share",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0,
+          40.0
+        ]
+      },
+      "properties": {
+        "slug": "renewable-citizen-share",
+        "name": "Renewable energy citizen share",
+        "kind": "energy",
+        "ladder_step": 3,
+        "ladder_step_name": "Rules that don't pay out",
+        "status": "candidate",
+        "summary": "Operating solar and wind assets earn high margins because the fuel is free and staffing is light. A codified share of revenue could fund a citizen right to energy instead of discretionary community benefits.",
+        "boundary_type": "polygon",
+        "boundary_notes": "Pilot portfolio to be chosen (Iberia discussed). Indicative: the Iberian Peninsula, where the pilot portfolio was discussed.",
+        "rules": "Community benefit agreements (voluntary)",
+        "cloud_mirror_spoke": "",
+        "registry_url": "https://github.com/hub-culture/Commons/blob/main/data/registry/seed.json",
+        "location_precision": "indicative"
+      }
+    }
+  ]
+}
