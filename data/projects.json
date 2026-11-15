@@ -11,8 +11,32 @@
       "Existing registries to link to rather than duplicate"
     ],
     "links": [
-      {"label": "Ocean Data Initiative layers", "url": "https://github.com/hub-culture/Ocean"},
-      {"label": "Propose data or a site", "url": "https://github.com/hub-culture/Commons/issues"}
+      {
+        "label": "Ocean Data Initiative layers",
+        "url": "https://github.com/hub-culture/Ocean"
+      },
+      {
+        "label": "Propose data or a site",
+        "url": "https://github.com/hub-culture/Commons/issues"
+      }
+    ]
+  },
+  {
+    "id": "whale-sanctuary-community",
+    "name": "Whale sanctuary community",
+    "status": "in-design",
+    "summary": "A community on Cloud Mirror for tohorā, the whales, as legal persons, following He Whakaputanga Moana, the 2024 Declaration for the Ocean signed by Māori and Pacific Indigenous leaders. Being designed in conversation with Mere Takoko of the Pacific Whale Fund and the Moananui Sanctuary Trust. Indigenous partners shape its charter, and its rules are written so other places can adopt them.",
+    "input_wanted": [
+      "Indigenous governance and guardianship: who speaks for the whales",
+      "Protections for traditional knowledge and Indigenous data",
+      "Sighting, acoustic and ship-strike data as independent evidence",
+      "Sanctuary areas to map against marine protected areas and blue carbon"
+    ],
+    "links": [
+      {
+        "label": "Propose input",
+        "url": "https://github.com/hub-culture/Commons/issues"
+      }
     ]
   },
   {
@@ -25,8 +49,14 @@
       "Corrections where a measurement and a model disagree"
     ],
     "links": [
-      {"label": "Data and layers", "url": "https://github.com/hub-culture/Ocean"},
-      {"label": "Ocean Climate Fund", "url": "https://oceanclimatefund.com/data/OceanDataInitiative"}
+      {
+        "label": "Data and layers",
+        "url": "https://github.com/hub-culture/Ocean"
+      },
+      {
+        "label": "Ocean Climate Fund",
+        "url": "https://oceanclimatefund.com/data/OceanDataInitiative"
+      }
     ]
   },
   {
@@ -39,8 +69,14 @@
       "Better evidence for, or against, a claim already listed"
     ],
     "links": [
-      {"label": "Registry data", "url": "https://github.com/hub-culture/Commons/tree/main/data/registry"},
-      {"label": "Schema", "url": "https://github.com/hub-culture/Commons/blob/main/schema/commons.schema.json"}
+      {
+        "label": "Registry data",
+        "url": "https://github.com/hub-culture/Commons/tree/main/data/registry"
+      },
+      {
+        "label": "Schema",
+        "url": "https://github.com/hub-culture/Commons/blob/main/schema/commons.schema.json"
+      }
     ]
   },
   {
@@ -54,7 +90,10 @@
       "The second generation: students of these scholars"
     ],
     "links": [
-      {"label": "Lineage data", "url": "https://github.com/hub-culture/Commons/tree/main/data/lineage"}
+      {
+        "label": "Lineage data",
+        "url": "https://github.com/hub-culture/Commons/tree/main/data/lineage"
+      }
     ]
   },
   {
@@ -67,7 +106,10 @@
       "Monitoring data and partners on the ground"
     ],
     "links": [
-      {"label": "Registry entry", "url": "https://github.com/hub-culture/Commons/blob/main/data/registry/seed.json"}
+      {
+        "label": "Registry entry",
+        "url": "https://github.com/hub-culture/Commons/blob/main/data/registry/seed.json"
+      }
     ]
   },
   {
@@ -80,7 +122,10 @@
       "Companies willing to contribute and report"
     ],
     "links": [
-      {"label": "Case studies", "url": "https://github.com/hub-culture/Commons/blob/main/docs/case-studies.md"}
+      {
+        "label": "Case studies",
+        "url": "https://github.com/hub-culture/Commons/blob/main/docs/case-studies.md"
+      }
     ]
   },
   {
@@ -93,7 +138,10 @@
       "Views on fees, findings and appeals for agents"
     ],
     "links": [
-      {"label": "The community charter", "url": "https://cloud-mirror.hub.vg/communities/global-commons/"}
+      {
+        "label": "The community charter",
+        "url": "https://cloud-mirror.hub.vg/communities/global-commons/"
+      }
     ]
   }
 ]
