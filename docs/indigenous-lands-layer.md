@@ -1,6 +1,6 @@
 # Indigenous and community lands: a data layer for the Global Commons
 
-*In design, 16 November 2026. Started at the Hub Culture Climate Campus, COP31 Antalya, after a session on the Tropical Forest Forever Facility (TFFF) raised the need for a global map of Indigenous land claims. Nothing here is built yet; this note sets out the design for the people whose lands these are to shape.*
+*In design, 16 November 2026. Started at the Hub Culture Climate Campus, COP31 Antalya, on Sunday 15 November, when the Tropical Forest Forever Facility (TFFF) described a clear need, and a strong wish, for a way to map Indigenous land claims around the world as one global guide. See the [day five write-up](https://hubculture.com/hubs/1099/news/1984/). Nothing here is built yet; this note sets out the design for the people whose lands these are to shape. It feeds into the Campus workshop on the Climate Solution Set on 17 November.*
 
 ## Why
 
@@ -33,6 +33,8 @@ And one reading rule, which LandMark also states: **the absence of data does not
 - **Blue carbon and marine protection.** Coastal territories sit next to blue carbon sites and marine protected areas on the same map cells.
 - **Protection from extraction.** No DIRT territory or other value layer may launch over Indigenous or community land in the layer without that community's consent. This extends the rule DIRT already applies to registered commons.
 - **Self-governance.** A people or community that wants to can run its own community on Cloud Mirror, with its own charter, guardians and fund, and link it to its lands on the map. That is always its choice, never a default.
+- **A place online.** A community that wants one can have its own agent-run virtual space, linked to its land on Gaia.
+- **An archipelago of worlds.** Virtual worlds linked to Gaia, such as Emerald City and hubculture.city, can connect as an archipelago, each with its own rules and governance, through Cloud Mirror.
 
 ## Claiming value: first claim belongs to the people of the land
 
@@ -41,6 +43,14 @@ Proposed by Stan Stalnaker, 16 November 2026.
 - **Ven Oxygen (VO2), ready for them.** Once a territory is on the layer with consent, its natural-capital value can be prepared as Ven Oxygen in advance, so that the community's elders or other recognised representatives can claim it when they choose, without having to build anything themselves. Nothing is issued until they claim it.
 - **First claim on DIRT.** Inside a marked territory, the people of that land hold the first claim to issue DIRT, or any other value layer. No one else may launch there. They can also decide that nothing is ever launched.
 - **Who can claim.** A claim is made by the people's own recognised representatives, under the decision-making process they already use. It's recorded with its evidence, like any other claim, and can be challenged through the same process.
+
+## Proof from above: rewards that follow the evidence
+
+Ven Oxygen rewards stewardship, so it depends on evidence that the forest or the sea is actually being protected.
+
+- **On land:** open satellite and mapping data over each claimed area, such as forest cover and tree cover loss, is checked every season. It is one independent line of evidence; the community's own monitoring and testimony is another.
+- **At sea:** phytoplankton and ocean models play the same role. A bloom or a die-off seen in the data changes how much Ven Oxygen the ocean category produces.
+- **The same rule as the rest of the commons:** a claim of protection settles only when independent lines of evidence agree, as in the Open Ocean Data Initiative and the blue carbon registry. Where satellite data and the community disagree, the disagreement is kept as evidence and reviewed with the community, never used to cut a reward without a hearing.
 
 ## Overlapping claims: layers of contention, resolved together
 
