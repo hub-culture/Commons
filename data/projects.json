@@ -44,6 +44,28 @@
     ]
   },
   {
+    "id": "indigenous-lands-layer",
+    "name": "Indigenous and community lands layer",
+    "status": "in-design",
+    "summary": "A data layer on Gaia showing Indigenous and community lands next to forests, blue carbon sites, marine protected areas and the payments meant to reach them, including the at least 20% of Tropical Forest Forever Facility payments committed to Indigenous Peoples and local communities. It links to existing maps such as LandMark rather than copying them, publishes nothing without the free, prior and informed consent of the people concerned, and keeps the data under their control.",
+    "input_wanted": [
+      "Indigenous partners to govern the layer and shape its rules",
+      "What should never appear on a public map",
+      "Territories, ideally in Tropical Forest Forever Facility countries, whose people want to pilot it",
+      "Reporting on where Indigenous and community payments actually go"
+    ],
+    "links": [
+      {
+        "label": "Design note",
+        "url": "https://github.com/hub-culture/Commons/blob/main/docs/indigenous-lands-layer.md"
+      },
+      {
+        "label": "Propose input",
+        "url": "https://github.com/hub-culture/Commons/issues"
+      }
+    ]
+  },
+  {
     "id": "ocean-data-initiative",
     "name": "Ocean Data Initiative",
     "status": "live",
