@@ -25,7 +25,7 @@ An open, public record of blue carbon ecosystems (mangroves, seagrass meadows, s
 
 ## Linking to national registries through CAD Trust
 
-Many countries run national carbon registries built on the [UNDP National Carbon Registry](https://github.com/undp/undp-national-carbon-registry), an open-source digital public good built with Xeptagon. Those registries publish each project, its location, issuances and retirements to the CAD Trust network (Data Model v2). Anyone can read that data through a read-only observer node.
+Many countries run national carbon registries built on the [UNDP National Carbon Registry](https://github.com/undp/undp-national-carbon-registry), an open-source digital public good maintained by UNDP. Those registries publish each project, its location, issuances and retirements to the CAD Trust network (Data Model v2). Anyone can read that data through a read-only observer node.
 
 So the connector reads CAD Trust, not each registry. One connector covers every connected registry, and no registry has to give us an account. It follows each unit back to its project (unit, issuance, verification or project methodology, project) to total what was issued and retired. It then proposes a link when a project reads as blue carbon and its location falls near a site.
 
