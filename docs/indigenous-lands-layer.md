@@ -34,13 +34,30 @@ And one reading rule, which LandMark also states: **the absence of data does not
 - **Protection from extraction.** No DIRT territory or other value layer may launch over Indigenous or community land in the layer without that community's consent. This extends the rule DIRT already applies to registered commons.
 - **Self-governance.** A people or community that wants to can run its own community on Cloud Mirror, with its own charter, guardians and fund, and link it to its lands on the map. That is always its choice, never a default.
 
+## Claiming value: first claim belongs to the people of the land
+
+Proposed by Stan Stalnaker, 16 November 2026.
+
+- **Ven Oxygen (VO2), ready for them.** Once a territory is on the layer with consent, its natural-capital value can be prepared as Ven Oxygen in advance, so that the community's elders or other recognised representatives can claim it when they choose, without having to build anything themselves. Nothing is issued until they claim it.
+- **First claim on DIRT.** Inside a marked territory, the people of that land hold the first claim to issue DIRT, or any other value layer. No one else may launch there. They can also decide that nothing is ever launched.
+- **Who can claim.** A claim is made by the people's own recognised representatives, under the decision-making process they already use. It's recorded with its evidence, like any other claim, and can be challenged through the same process.
+
+## Overlapping claims: layers of contention, resolved together
+
+Claims overlap: two peoples claim the same land, or a community claim overlaps a state reserve, a concession or a carbon project. The layer shows those overlaps openly, as stacked layers, rather than hiding them or choosing a winner.
+
+- **Visible, not decided.** The map marks an overlap as contested and shows each claim with its own evidence. The commons never decides who is right.
+- **A route to resolution.** The parties to an overlap can set up a shared community on Cloud Mirror with a joint charter, so the area is governed together, with Ostrom's rules for conflict resolution and nested governance built in. Or they can record an agreement that splits or shares the area.
+- **Nothing launches on contested ground.** No VO2 claim or DIRT launch goes ahead on an overlap until the parties have agreed, either to share it or to divide it.
+
 ## Questions for Indigenous partners
 
 1. Who should govern the layer itself, and how is that council chosen?
 2. What should never be on a public map?
 3. How should LandMark, national registries and community maps be weighed when they disagree?
 4. Which territories, and which TFFF countries, should come first?
-5. Would any community want a value layer or its own Cloud Mirror community, and on what terms?
+5. Would any community want to claim Ven Oxygen or DIRT, or run its own Cloud Mirror community, and on what terms?
+6. How should overlapping claims be shown, and who should be able to see them?
 
 ## First steps
 
