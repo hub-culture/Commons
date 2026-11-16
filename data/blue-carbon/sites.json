@@ -1,0 +1,116 @@
+[
+  {
+    "id": "mikoko-pamoja",
+    "name": "Mikoko Pamoja, Gazi Bay",
+    "ecosystems": [
+      "mangrove"
+    ],
+    "country": "KE",
+    "country_name": "Kenya",
+    "region": "Gazi Bay, Kwale County",
+    "location": {
+      "point": [
+        39.8333,
+        -4.4167
+      ],
+      "precision": "site",
+      "source": "Plan Vivo Project Design Document, 2020 revision (4°25'S, 39°50'E)"
+    },
+    "area_ha": 117,
+    "tenure": "State-owned mangroves. Community rights, including the right to carbon, are held through a Community Forest Association.",
+    "keepers": [
+      {
+        "name": "Mikoko Pamoja Community Organisation (Gazi and Makongeni villages)",
+        "role": "community",
+        "notes": "Owns the carbon credits; income is invested in local projects chosen by community consultation."
+      },
+      {
+        "name": "Association for Coastal Ecosystem Services (ACES)",
+        "role": "ngo",
+        "notes": "Coordinates the project and submits it to Plan Vivo."
+      },
+      {
+        "name": "Kenya Marine and Fisheries Research Institute (KMFRI)",
+        "role": "research"
+      },
+      {
+        "name": "Kenya Forest Service",
+        "role": "government"
+      }
+    ],
+    "claims": [
+      {
+        "statement": "The project protects 107 ha of natural mangrove forest and 10 ha of mangrove plantation (117 ha) at Gazi Bay, over 20 years from 2013.",
+        "status": "settled",
+        "min_lineages": 2,
+        "evidence": [
+          {
+            "source": "https://www.clevel.co.uk/wp-content/uploads/2022/05/Mikoko_Pamoja_PDD.pdf",
+            "lineage": "project documentation (ACES)",
+            "kind": "registry",
+            "licence": "unknown",
+            "supports": true
+          },
+          {
+            "source": "https://www.un.org/es/node/208222",
+            "lineage": "UN Information Centre Nairobi reporting",
+            "kind": "reporting",
+            "licence": "unknown",
+            "supports": true
+          }
+        ]
+      },
+      {
+        "statement": "Income from credit sales is invested in local projects chosen by the community, such as water and school materials.",
+        "status": "settled",
+        "min_lineages": 2,
+        "evidence": [
+          {
+            "source": "https://www.clevel.co.uk/wp-content/uploads/2022/05/Mikoko_Pamoja_PDD.pdf",
+            "lineage": "project documentation (ACES)",
+            "kind": "registry",
+            "licence": "unknown",
+            "supports": true
+          },
+          {
+            "source": "https://www.un.org/de/node/208222",
+            "lineage": "UN Information Centre Nairobi reporting",
+            "kind": "reporting",
+            "licence": "unknown",
+            "supports": true
+          }
+        ]
+      },
+      {
+        "statement": "Plan Vivo validated the sale of at least 3,000 tCO2e a year over 2013–2033.",
+        "status": "unverified",
+        "evidence": [
+          {
+            "source": "https://www.un.org/es/node/208222",
+            "lineage": "UN Information Centre Nairobi reporting",
+            "kind": "reporting",
+            "licence": "unknown",
+            "supports": true
+          }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "what": "Credit income invested in community projects (water, school materials)",
+        "status": "paid",
+        "source": "https://www.un.org/de/node/208222"
+      }
+    ],
+    "credit_links": [
+      {
+        "registry": "Plan Vivo",
+        "standard": "Plan Vivo",
+        "status": "not-yet-linked",
+        "source": "https://www.clevel.co.uk/wp-content/uploads/2022/05/Mikoko_Pamoja_PDD.pdf"
+      }
+    ],
+    "consent": "Drawn from public project documents and public reporting. No personal data. To be confirmed with the Mikoko Pamoja Community Organisation before the status moves past candidate.",
+    "status": "candidate"
+  }
+]

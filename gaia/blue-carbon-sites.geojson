@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "mikoko-pamoja",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.8333,
+          -4.4167
+        ]
+      },
+      "properties": {
+        "slug": "mikoko-pamoja",
+        "name": "Mikoko Pamoja, Gazi Bay",
+        "ecosystems": "mangrove",
+        "country": "KE",
+        "area_ha": 117,
+        "keepers": "Mikoko Pamoja Community Organisation (Gazi and Makongeni villages); Association for Coastal Ecosystem Services (ACES); Kenya Marine and Fisheries Research Institute (KMFRI); Kenya Forest Service",
+        "claims_settled": 2,
+        "claims_total": 3,
+        "credit_registries": "Plan Vivo",
+        "status": "candidate",
+        "location_precision": "site",
+        "registry_url": "https://github.com/hub-culture/Commons/blob/main/data/blue-carbon/sites.json"
+      }
+    }
+  ]
+}

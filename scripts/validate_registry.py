@@ -34,6 +34,24 @@ for path in sorted(glob.glob("data/registry/*.json")):
         for e in v.iter_errors(entry):
             report(path, entry, f"{'/'.join(map(str, e.path))}: {e.message}")
         check_claims(path, entry)
+# The open blue carbon registry (data/blue-carbon/sites.json): each site against
+# its schema, which borrows the claims shape from the commons schema, and the
+# same lineage rule for every claim.
+from referencing import Registry, Resource  # noqa: E402
+
+site_schema = json.load(open("schema/blue-carbon-site.schema.json"))
+refs = Registry().with_resource("commons.schema.json", Resource.from_contents(schema))
+site_v = Draft202012Validator(site_schema, registry=refs)
+seen_sites = set()
+for path in sorted(glob.glob("data/blue-carbon/*.json")):
+    for site in json.load(open(path)):
+        for e in site_v.iter_errors(site):
+            report(path, site, f"{'/'.join(map(str, e.path))}: {e.message}")
+        if site.get("id") in seen_sites:
+            report(path, site, "duplicate id")
+        seen_sites.add(site.get("id"))
+        check_claims(path, site)
+
 # The projects board (data/projects.json): unique ids, a known status,
 # something to ask for, and https links.
 STATUSES = {"live", "seed", "in-design", "seeking-partners"}

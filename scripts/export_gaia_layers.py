@@ -75,9 +75,44 @@ def main():
             for e in unplaced
         ],
     }
+    # The open blue carbon registry: one point per site, with its keepers,
+    # how many claims have settled, and any credits other registries issued.
+    sites = json.load(open(os.path.join("data", "blue-carbon", "sites.json")))
+    site_features = []
+    for s in sites:
+        settled = sum(1 for c in s["claims"] if c["status"] == "settled")
+        site_features.append({
+            "type": "Feature",
+            "id": s["id"],
+            "geometry": s["location"].get("boundary") or {"type": "Point", "coordinates": s["location"]["point"]},
+            "properties": {
+                "slug": s["id"],
+                "name": s["name"],
+                "ecosystems": ", ".join(s["ecosystems"]),
+                "country": s["country"],
+                "area_ha": s.get("area_ha"),
+                "keepers": "; ".join(k["name"] for k in s["keepers"]),
+                "claims_settled": settled,
+                "claims_total": len(s["claims"]),
+                "credit_registries": ", ".join(sorted({c["registry"] for c in s["credit_links"]})),
+                "status": s["status"],
+                "location_precision": s["location"]["precision"],
+                "registry_url": f"{REPO}/blob/main/data/blue-carbon/sites.json",
+            },
+        })
+    with open(os.path.join("gaia", "blue-carbon-sites.geojson"), "w") as f:
+        json.dump({"type": "FeatureCollection", "features": site_features}, f, indent=2, ensure_ascii=False)
+    manifest["layers"].append({
+        "id": "blue-carbon",
+        "file": "blue-carbon-sites.geojson",
+        "name": "Open blue carbon registry",
+        "description": "Blue carbon sites (mangroves, seagrass, salt marsh): who keeps them, how many claims about them have settled on independent evidence, and which registries have issued credits for them. The registry records; it does not issue or sell credits.",
+        "h3_resolutions": [6],
+        "attribution": ["Global Commons Initiative and contributors (CC BY 4.0); sources listed per claim"],
+    })
     with open(os.path.join("gaia", "layers.json"), "w") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
-    print(f"{len(placed)} placed, {len(unplaced)} unplaced")
+    print(f"{len(placed)} placed, {len(unplaced)} unplaced, {len(site_features)} blue carbon sites")
 
 
 if __name__ == "__main__":

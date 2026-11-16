@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hub-culture/Commons/schema/blue-carbon-site.schema.json",
+  "title": "Open blue carbon registry: a site",
+  "description": "One blue carbon site: where it is, who keeps it, what is claimed about it and on what evidence, what was promised and paid, and any credits other registries have issued for it. The registry records; it never issues or sells credits.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "ecosystems",
+    "country",
+    "location",
+    "keepers",
+    "claims",
+    "credit_links",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "ecosystems": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "mangrove",
+          "seagrass",
+          "salt-marsh",
+          "tidal-flat",
+          "kelp",
+          "other-coastal-wetland"
+        ]
+      }
+    },
+    "country": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 code."
+    },
+    "country_name": {
+      "type": "string",
+      "description": "Country name as the CAD Trust location_country picklist spells it, used to match projects that have no map location."
+    },
+    "region": {
+      "type": "string"
+    },
+    "location": {
+      "type": "object",
+      "required": [
+        "point",
+        "precision"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "point": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "[longitude, latitude]."
+        },
+        "precision": {
+          "enum": [
+            "boundary",
+            "site",
+            "indicative"
+          ]
+        },
+        "boundary": {
+          "type": "object",
+          "description": "GeoJSON Polygon or MultiPolygon, when the keepers have agreed to publish it."
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    },
+    "area_ha": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tenure": {
+      "type": "string",
+      "description": "Who holds the land or seabed, and on what terms."
+    },
+    "keepers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "role"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "community",
+              "indigenous",
+              "government",
+              "ngo",
+              "research",
+              "developer",
+              "other"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "description": "Same shape and rule as the commons registry: a claim settles only when enough independent lineages agree.",
+      "items": {
+        "$ref": "commons.schema.json#/properties/claims/items"
+      }
+    },
+    "payments": {
+      "type": "array",
+      "description": "What was promised to the keepers and what reached them, each with its source.",
+      "items": {
+        "type": "object",
+        "required": [
+          "what",
+          "status",
+          "source"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "what": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "promised",
+              "paid",
+              "disputed",
+              "unknown"
+            ]
+          },
+          "amount": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "credit_links": {
+      "type": "array",
+      "description": "Credits other registries have issued for this site. Linked by reference; this registry never holds or moves credits.",
+      "items": {
+        "type": "object",
+        "required": [
+          "registry",
+          "status"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "registry": {
+            "type": "string",
+            "description": "e.g. a national registry built on the UNDP National Carbon Registry, Plan Vivo, Verra."
+          },
+          "standard": {
+            "type": "string"
+          },
+          "registry_project_id": {
+            "type": "string"
+          },
+          "cadtrust_project_id": {
+            "type": "string",
+            "description": "The project's cadTrustProjectId on the CAD Trust network, when it is published there."
+          },
+          "status": {
+            "enum": [
+              "linked",
+              "candidate",
+              "not-yet-linked"
+            ]
+          },
+          "issued_tco2e": {
+            "type": "number"
+          },
+          "retired_tco2e": {
+            "type": "number"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "consent": {
+      "type": "string",
+      "description": "Whose consent covers what is published here, and for what use."
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "listed",
+        "verified-by-keepers"
+      ]
+    }
+  }
+}

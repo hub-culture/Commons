@@ -1,0 +1,28 @@
+{
+  "_note": "Synthetic records in the CAD Trust Data Model v2 shape, for tests only. Not real projects.",
+  "project": [
+    {"cadTrustProjectId": "p-blue", "projectId": "NCR-KE-001", "projectName": "Test mangrove restoration, Gazi", "projectDescription": "Synthetic test project", "projectSector": ["Afforestation and reforestation"], "projectType": ["Reforestation"], "projectStatus": "Registered", "projectRegistryName": "Test national registry", "projectLink": "https://registry.example/projects/NCR-KE-001"},
+    {"cadTrustProjectId": "p-far", "projectId": "NCR-KE-002", "projectName": "Test seagrass meadow, Lamu", "projectSector": ["Others"], "projectType": ["Agriculture, forestry and other land use (AFOLU)"], "projectStatus": "Registered", "projectRegistryName": "Test national registry", "projectLink": "https://registry.example/projects/NCR-KE-002"},
+    {"cadTrustProjectId": "p-solar", "projectId": "NCR-KE-003", "projectName": "Test solar farm", "projectSector": ["Energy industries (renewable-/ non renewable sources)"], "projectType": ["Solar"], "projectStatus": "Registered", "projectRegistryName": "Test national registry", "projectLink": "https://registry.example/projects/NCR-KE-003"},
+    {"cadTrustProjectId": "p-noloc", "projectId": "NCR-KE-004", "projectName": "Test blue carbon programme", "projectSector": ["Others"], "projectType": ["Any combination of the above"], "projectStatus": "Listed", "projectRegistryName": "Test national registry", "projectLink": "https://registry.example/projects/NCR-KE-004"}
+  ],
+  "location": [
+    {"cadTrustLocationId": "l1", "cadTrustProjectId": "p-blue", "locationCountry": "Kenya", "locationRegion": "Kwale", "locationGis": "{\"type\":\"Point\",\"coordinates\":[39.85,-4.43]}"},
+    {"cadTrustLocationId": "l2", "cadTrustProjectId": "p-far", "locationCountry": "Kenya", "locationRegion": "Lamu", "locationGis": "{\"type\":\"Polygon\",\"coordinates\":[[[40.8,-2.2],[40.9,-2.2],[40.9,-2.3],[40.8,-2.3],[40.8,-2.2]]]}"},
+    {"cadTrustLocationId": "l3", "cadTrustProjectId": "p-solar", "locationCountry": "Kenya", "locationGis": "{\"type\":\"Point\",\"coordinates\":[39.84,-4.42]}"},
+    {"cadTrustLocationId": "l4", "cadTrustProjectId": "p-noloc", "locationCountry": "Kenya", "locationRegion": "test"}
+  ],
+  "verification": [
+    {"cadTrustVerificationId": "v1", "cadTrustProjectId": "p-blue", "verificationId": "VER-1", "verificationBody": "Test verifier"}
+  ],
+  "project_methodology": [
+    {"cadTrustProjectMethodologyId": "pm1", "cadTrustProjectId": "p-blue", "cadTrustMethodologyId": "m1"}
+  ],
+  "issuance": [
+    {"cadTrustIssuanceId": "i1", "issuanceId": "ISS-1", "cadTrustVerificationId": "v1", "cadTrustProjectMethodologyId": "pm1"}
+  ],
+  "unit": [
+    {"cadTrustUnitId": "u1", "cadTrustIssuanceId": "i1", "unitSerialId": "S-1", "unitCount": 1000, "unitStatus": "Held", "unitVintageYear": 2024},
+    {"cadTrustUnitId": "u2", "cadTrustIssuanceId": "i1", "unitSerialId": "S-2", "unitCount": 400, "unitStatus": "Retired", "unitVintageYear": 2025}
+  ]
+}

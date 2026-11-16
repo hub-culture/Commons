@@ -3,20 +3,24 @@
     "id": "open-blue-carbon-registry",
     "name": "Open blue carbon registry",
     "status": "in-design",
-    "summary": "An open, public registry of blue carbon ecosystems (mangroves, seagrass meadows and salt marshes): where they are, who keeps them, what is measured there, and what has been promised and paid. Every claim carries its sources and settles only when independent lines of evidence agree. It records; it does not issue or sell credits.",
+    "summary": "An open, public registry of blue carbon ecosystems (mangroves, seagrass meadows and salt marshes): where they are, who keeps them, what is measured there, and what has been promised and paid. Every claim carries its sources and settles only when independent lines of evidence agree. Version 0 is live with its first site, Mikoko Pamoja in Kenya, and reads credit records from national registries through the CAD Trust network. It records; it does not issue or sell credits.",
     "input_wanted": [
+      "Sites, with the communities who keep them",
       "Open maps and datasets for mangrove, seagrass and salt-marsh extent",
       "Measurement methods for carbon stocks and their uncertainty",
-      "Pilot sites with communities ready to keep and record them",
-      "Existing registries to link to rather than duplicate"
+      "National registries ready to connect through CAD Trust"
     ],
     "links": [
       {
-        "label": "Ocean Data Initiative layers",
-        "url": "https://github.com/hub-culture/Ocean"
+        "label": "How it works",
+        "url": "https://github.com/hub-culture/Commons/blob/main/docs/blue-carbon-registry.md"
       },
       {
-        "label": "Propose data or a site",
+        "label": "Sites",
+        "url": "https://github.com/hub-culture/Commons/blob/main/data/blue-carbon/sites.json"
+      },
+      {
+        "label": "Propose a site",
         "url": "https://github.com/hub-culture/Commons/issues"
       }
     ]
