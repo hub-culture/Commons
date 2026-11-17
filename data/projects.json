@@ -70,6 +70,28 @@
     ]
   },
   {
+    "id": "choco-pacific-guardians",
+    "name": "Chocó Pacific guardians",
+    "status": "in-design",
+    "summary": "A community on Cloud Mirror for the Afro-descendant and Indigenous communities of Colombia's Chocó Pacific coast, one of the most biodiverse marine corridors on Earth. Started at the COP31 Climate Campus leadership dinner. It puts their vital needs first (water, energy and connectivity), then education and tourism, and builds self-sustaining economic models that pay communities for the conservation they already lead as guardians of the coast: mangroves in the open blue carbon registry, ocean monitoring for the Ocean Data Initiative, and first claim on any value from their territory. The communities govern it, and nothing is published without their consent.",
+    "input_wanted": [
+      "Community councils and Indigenous authorities to govern it and choose a pilot",
+      "The most urgent vital need (water, energy or connectivity) and partners to fund it",
+      "Monitoring communities already do on mangroves, fisheries and marine protected areas",
+      "What should never appear on a public map"
+    ],
+    "links": [
+      {
+        "label": "Design note",
+        "url": "https://github.com/hub-culture/Commons/blob/main/docs/choco-pacific-guardians.md"
+      },
+      {
+        "label": "Propose input",
+        "url": "https://github.com/hub-culture/Commons/issues"
+      }
+    ]
+  },
+  {
     "id": "ocean-data-initiative",
     "name": "Ocean Data Initiative",
     "status": "live",

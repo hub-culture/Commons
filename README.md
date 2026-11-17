@@ -14,6 +14,7 @@ The global commons already exists. Oceans, the atmosphere, genetic resources, th
 | [`data/registry/`](data/registry/) | A seed registry of commons, each placed on the rules ladder, in the format Gaia map layers will use. |
 | [`docs/blue-carbon-registry.md`](docs/blue-carbon-registry.md) | **The open blue carbon registry, version 0**: sites, evidence rules, and a read-only connector to national carbon registries through CAD Trust. |
 | [`docs/indigenous-lands-layer.md`](docs/indigenous-lands-layer.md) | **In design:** a Gaia layer of Indigenous and community lands, linked to existing maps, published only with consent, tracking whether payments reach them. |
+| [`docs/choco-pacific-guardians.md`](docs/choco-pacific-guardians.md) | **In design:** a Cloud Mirror community for the Afro-descendant and Indigenous communities of Colombia's Chocó Pacific coast: vital needs first, then a guardian economy they govern. |
 | [`data/projects.json`](data/projects.json) | **Early projects open for input**, starting with an open blue carbon registry. Each lists its status and what it needs. Shown at [cloud-mirror.hub.vg/commons](https://cloud-mirror.hub.vg/commons/). |
 | [`schema/`](schema/) | JSON Schema for registry entries. |
 | [`gaia/`](gaia/) | The registry as a **Gaia synced source** (manifest plus GeoJSON). Add `commons=https://raw.githubusercontent.com/hub-culture/Commons/main/gaia/layers.json` to Gaia's `GAIA_SOURCES` and it appears as the `commons.registry` layer. Rebuild with `python scripts/export_gaia_layers.py`. |
